@@ -8,4 +8,5 @@ A dark independent vim/neovim colorscheme >.<
 # Screenshot 
 <img src="assets/uwu.png" alt="uwu colorscheme"> 
 
-
+# Contribute 
+- Syntax related and other PR's are welcomed ❤️. 
