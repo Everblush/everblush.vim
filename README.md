@@ -1,5 +1,5 @@
 # uwu.vim
-A vim-colorscheme which i think looks like a cat maybe 
+A dark independent vim/neovim colorscheme >.< 
 
 # Installation 
 - ```Plug 'mangeshrex/uwu.vim' ``` 
