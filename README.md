@@ -8,7 +8,7 @@ A dark independent vim/neovim colorscheme >.<
 # Screenshot 
 - Independently with Vim 
 <img src="assets/uwu.png" alt="uwu colorscheme"> 
-- uWu with ![NvChad](https://github.com/NvChad/NvChad)
+- uWu with [NvChad](https://github.com/NvChad/NvChad)
 <img src="assets/uwu-nvchad.png" alt="uwu colors with nvchad"> 
 
 # Contribute 
