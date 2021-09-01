@@ -6,6 +6,6 @@ A vim-colorscheme which i think looks like a cat maybe
 - Add ```colorscheme uwu``` to .vimrc or init.vim . 
 
 # Screenshot 
-- <img src="assets/uwu.png" alt="uwu colorscheme"> 
+<img src="assets/uwu.png" alt="uwu colorscheme"> 
 
 
