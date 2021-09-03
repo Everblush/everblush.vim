@@ -57,6 +57,7 @@ hi cssClassNameDot guifg=#946fa8 guibg=NONE
 hi Statement guifg=#ef7cbb guibg=NONE
 hi Operator guifg=#ef7cbb guibg=NONE
 hi cssAttr guifg=#ef7cbb guibg=NONE
+hi colorcolumn guifg=#0f1315 guibg=NONE 
 
 hi PMenu guifg=#6bb05d guibg=#e74c4c
 hi PMenuSel guifg=#51a39f guibg=#0f1315
