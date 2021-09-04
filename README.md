@@ -4,6 +4,9 @@ A dark independent vim/neovim colorscheme >.<
 # Installation 
 - ```Plug 'mangeshrex/uwu.vim' ``` 
 - Add ```colorscheme uwu``` to .vimrc or init.vim . 
+
+# Setup 
+- These settings are important put this in your ```.vimrc``` / ```init.vim```
 - ``` 
   set t_Co=256
   let &t_ut=''
