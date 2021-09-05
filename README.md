@@ -26,7 +26,7 @@ A dark independent vim/neovim colorscheme >.<
     endif
     echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
   endfunc 
-``` 
+
 # Screenshot 
 - Independently with Vim 
 <img src="assets/uwu-vim.png" alt="uwu with vim"> 
