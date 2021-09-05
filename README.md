@@ -1,4 +1,6 @@
-
+<p align-"center"> 
+	<img src="assets/uwu.png" alt="uwu colorscheme"
+</p>  
 A dark independent vim/neovim colorscheme >.< 
 
 # Installation 
@@ -27,7 +29,7 @@ A dark independent vim/neovim colorscheme >.<
 
 # Screenshot 
 - Independently with Vim 
-<img src="assets/uwu.png" alt="uwu colorscheme"> 
+<img src="assets/uwu-vim.png" alt="uwu with vim"> 
 
 - uWu with <a href="github.com/NvChad/NvChad">NvChad</a> 
 <img src="assets/uwu-nvchad.png" alt="uwu colors with nvchad"> 
