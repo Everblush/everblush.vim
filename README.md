@@ -1,7 +1,7 @@
 <p align-"center"> 
 	<img src="assets/uwu.png" alt="uwu colorscheme"
-</p>  
 A dark independent vim/neovim colorscheme >.< 
+</p>
 
 # Installation 
 - ```Plug 'mangeshrex/uwu.vim' ``` 
