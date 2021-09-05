@@ -35,5 +35,5 @@ A dark independent vim/neovim colorscheme >.<
 <img src="assets/uwu-nvchad.png" alt="uwu colors with nvchad"> 
 
 # Contribute 
-- Syntax related and other PR's are welcomed ❤️.
+- Syntax related and other PR's are welcomed  ❤️ .
 
