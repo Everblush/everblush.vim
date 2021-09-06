@@ -31,7 +31,7 @@ A dark independent vim/neovim colorscheme >.<
 - Independently with Vim 
 <img src="assets/uwu-vim.png" alt="uwu with vim"> 
 
-- uWu with <a href="github.com/NvChad/NvChad">NvChad</a> 
+- uWu with <a href="https://github.com/NvChad/NvChad">NvChad</a> 
 <img src="assets/uwu-nvchad.png" alt="uwu colors with nvchad"> 
 
 # Contribute 
