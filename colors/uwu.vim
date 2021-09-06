@@ -50,23 +50,22 @@ hi Function guifg=#5b98a9 guibg=NONE
 hi Directory guifg=#3a3c3d guibg=NONE
 hi markdownLinkText guifg=#c26f6f guibg=NONE
 hi javaScriptBoolean guifg=#c26f6f guibg=NONE
-hi Include guifg=#2F3131  guibg=NONE
+hi Include guifg=#e74c4c  guibg=NONE
 hi Storage guifg=#d3869b guibg=NONE
 hi cssClassName guifg=#946fa8 guibg=NONE
 hi cssClassNameDot guifg=#946fa8 guibg=NONE
 hi Statement guifg=#ef7cbb guibg=NONE
 hi Operator guifg=#ef7cbb guibg=NONE
 hi cssAttr guifg=#ef7cbb guibg=NONE
-hi colorcolumn guifg=#0f1315 guibg=NONE 
-
-hi PMenu guifg=#6bb05d guibg=#e74c4c
-hi PMenuSel guifg=#51a39f guibg=#0f1315
+hi colorcolumn guifg=#2F3131 guibg=NONE 
+hi PMenu guifg=#C5C8C9  guibg=#2F3131  
+hi PMenuSel guifg=#0F1315 guibg=#8dc776 
 hi SignColumn guibg=#0f1315 
 hi Title guifg=#e59e67
 hi LineNr guifg=#303435 guibg=#0f1315
 hi NonText guifg=#ff81e6 guibg=#0f1315
-hi Comment guifg=#2F3131 gui=italic
-hi SpecialComment guifg=#303435 gui=italic guibg=#303435
+hi Comment guifg=#323638 gui=italic
+hi SpecialComment guifg=#303435 gui=italic guibg=NONE 
 hi CursorLine guibg=#303435
 hi TabLineFill gui=NONE guibg=#303435
 hi TabLine guifg=#c4c4c4 guibg=#303435 gui=NONE
