@@ -1,5 +1,7 @@
 <p align-"center"> 
 	<img src="assets/uwu.png" alt="uwu colorscheme">
+</p>
+<p align="center">
 A dark independent vim/neovim colorscheme >.< 
 </p>
 
