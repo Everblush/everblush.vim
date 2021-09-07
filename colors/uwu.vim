@@ -5,7 +5,7 @@ set background=dark
 set t_Co=256
 hi Normal guifg=#C5C8C9  ctermbg=NONE guibg=#0f1315 gui=NONE
 
-hi CursorLineNR guibg=NONE guifg=#2F3131  
+hi CursorLineNR guibg=NONE guifg=#2B3936   
 hi CursorLine guibg= #2F3131
 hi DiffText guifg=#e7ac7e guibg=NONE
 hi ErrorMsg guifg=#e74c4c guibg=NONE
@@ -57,7 +57,7 @@ hi cssClassNameDot guifg=#946fa8 guibg=NONE
 hi Statement guifg=#ef7cbb guibg=NONE
 hi Operator guifg=#ef7cbb guibg=NONE
 hi cssAttr guifg=#ef7cbb guibg=NONE
-hi colorcolumn guifg=#2F3131 guibg=NONE 
+hi colorcolumn guifg=#313B39 guibg=#313B39  
 hi PMenu guifg=#C5C8C9  guibg=#2F3131  
 hi PMenuSel guifg=#0F1315 guibg=#8dc776 
 hi SignColumn guibg=#0f1315 
@@ -72,5 +72,5 @@ hi TabLine guifg=#c4c4c4 guibg=#303435 gui=NONE
 hi StatusLine gui=italic guibg=#0f1315 guifg=#C5C8C9 
 hi StatusLineNC gui=NONE guibg=#0f1315 guifg=#C5C8C9 
 hi Search guibg=#303435 guifg=#5b98a9
-hi VertSplit gui=NONE guifg=#0f1315 guibg=NONE
+hi VertSplit gui=NONE guifg=NONE guibg=#2F3131 
 hi Visual gui=NONE guibg=#303435
