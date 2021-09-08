@@ -6,7 +6,7 @@ set t_Co=256
 hi Normal guifg=#C5C8C9  ctermbg=NONE guibg=#0f1315 gui=NONE
 
 hi CursorLineNR guibg=NONE guifg=#2B3936   
-hi CursorLine guibg= #2F3131
+hi CursorLine guibg= #2B3936 
 hi DiffText guifg=#e7ac7e guibg=NONE
 hi ErrorMsg guifg=#e74c4c guibg=NONE
 hi WarningMsg guifg=#2F3131  guibg=NONE
