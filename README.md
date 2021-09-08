@@ -6,8 +6,8 @@ A dark independent vim/neovim colorscheme >.<
 </p>
 
 <p align="center"> 
-<img src"https://img.shields.io/github/stars/Mangeshrex/uwu.vim?color=d3869b&labelColor=2F3131&style=for-the-badge"> <a href="https://github.com/mangeshrex/stargazers"><img src"https://img.shields.io/github/issues/Mangeshrex/uwu.vim?color=e7ac7e&labelColor=2F3131&style=for-the-badge"> </a> 
-<img src"https://img.shields.io/static/v1?label=license&message=MIT&color=5b98a9&labelColor=3b4252&style=for-the-badge"> 
+<img src="https://img.shields.io/github/stars/Mangeshrex/uwu.vim?color=d3869b&labelColor=2F3131&style=for-the-badge"> <img src="https://img.shields.io/github/issues/Mangeshrex/uwu.vim?color=e7ac7e&labelColor=2F3131&style=for-the-badge"> </a> 
+<img src="https://img.shields.io/static/v1?label=license&message=MIT&color=5b98a9&labelColor=3b4252&style=for-the-badge"> 
 <img src="https://img.shields.io/github/forks/Mangeshrex/uwu.vim?color=e7ac7e&labelColor=2F3131&style=for-the-badge"> 
 </p> 
 
