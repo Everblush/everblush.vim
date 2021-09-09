@@ -8,11 +8,7 @@ A dark independent vim/neovim colorscheme >.<
 <p align="center"> 
 <img src="https://img.shields.io/github/stars/Mangeshrex/uwu.vim?color=d3869b&labelColor=2F3131&style=for-the-badge"> <img src="https://img.shields.io/github/issues/Mangeshrex/uwu.vim?color=e7ac7e&labelColor=2F3131&style=for-the-badge"> </a> 
 <img src="https://img.shields.io/static/v1?label=license&message=MIT&color=5b98a9&labelColor=2F3131&style=for-the-badge"> 
-<<<<<<< HEAD
-<img src="https://img.shields.io/github/forks/Mangeshrex/uwu.vim?color=e7ac7e&labelColor=2F3131&style=for-the-badge"> <img src="https://img.shields.io/static/v1?label=PR%27s&message=Welcomed&color=51a39f&labelColor=2F3131&style=for-the-badge"> `
-=======
-<img src="https://img.shields.io/github/forks/Mangeshrex/uwu.vim?color=e74c4c&labelColor=2F3131&style=for-the-badge"> 
->>>>>>> 17384607cc11de8dfb359ddea366b3d0e4ecd250
+<img src="https://img.shields.io/github/forks/Mangeshrex/uwu.vim?color=e7ac7e&labelColor=2F3131&style=for-the-badge"> <img src="https://img.shields.io/static/v1?label=PR%27s&message=Welcomed&color=51a39f&labelColor=2F3131&style=for-the-badge"> <img src="https://img.shields.io/github/forks/Mangeshrex/uwu.vim?color=e74c4c&labelColor=2F3131&style=for-the-badge"> 
 </p> 
 
 # Installation 
