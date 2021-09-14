@@ -1,3 +1,26 @@
+" Project: UwU Vim 
+" Repository: https://github.com/mangeshrex/uwu.vim 
+" Maintainer: https://github.com/Mangeshrex 
+" LICENSE: MIT  
+
+" Setting up the colors 
+let s:uwu0_gui = "#2F3131" 
+let s:uwu1_gui = "#e74c4c"
+let s:uwu2_gui = "#6bb05d" 
+let s:uwu3_gui = "#e59e67" 
+let s:uwu4_gui = "#5b98a9" 
+let s:uwu5_gui = "#ef7cbb" 
+let s:uwu6_gui = "#51a39f" 
+let s:uwu7_gui = "#51a39f" 
+let s:uwu8_gui = "#343636" 
+let s:uwu9_gui = "#c26f6f"
+let s:uwu10_gui = "#8dc776" 
+let s:uwu11_gui = "#e7ac7e" 
+let s:uwu12_gui = "#7ab3c3"
+let s:uwu13_gui = "#d3869b" 
+let s:uwu14_gui = "#6db0ad"
+let s:uwu15_gui = "#bfbfbf" 
+
 hi clear
 syntax reset
 let g:colors_name = "uwu"
@@ -74,3 +97,4 @@ hi StatusLineNC gui=NONE guibg=#0f1315 guifg=#C5C8C9
 hi Search guibg=#303435 guifg=#5b98a9
 hi VertSplit gui=NONE guifg=NONE guibg=#2F3131 
 hi Visual gui=NONE guibg=#303435
+ 
