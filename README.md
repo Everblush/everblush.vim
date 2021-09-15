@@ -42,6 +42,17 @@ A dark independent vim/neovim colorscheme >.<
 - uWu with <a href="https://github.com/NvChad/NvChad">NvChad</a> 
 <img src="assets/uwu-nvchad.png" alt="uwu colors with nvchad"> 
 
+# Terminal Config
+- ![Alacritty](https://github.com/mangeshrex/dotfiles/tree/main/uWu/alacritty/alacritty.yml) 
+- ![Kitty](https://github.com/Mangeshrex/dotfiles/tree/main/uWu/kitty/kitty.conf) 
+- ![Xresources](https://github.com/Mangeshrex/dotfles/tree/main/uWu/.Xresources) 
+
 # Contribute 
 - Syntax related and other PR's are welcomed  ❤️ .
 
+# TO-DO 
+- [ ] Adding some famous statusline support. 
+- [ ] Beautifying the colors more. 
+- [ ] Adding support for all other programs + apps. 
+
+Sorry, but I might be slow. 
