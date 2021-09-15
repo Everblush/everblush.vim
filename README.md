@@ -45,7 +45,7 @@ A dark independent vim/neovim colorscheme >.<
 # Terminal Config
 - ![Alacritty](https://github.com/mangeshrex/dotfiles/tree/main/uWu/alacritty/alacritty.yml) 
 - ![Kitty](https://github.com/Mangeshrex/dotfiles/tree/main/uWu/kitty/kitty.conf) 
-- ![Xresources](https://github.com/Mangeshrex/dotfiles/tree/main/uWu/.Xresources) 
+- ![Xresources](https://github.com/Mangeshrex/dotfiles/blob/main/uWu/.Xresources) 
 
 # Contribute 
 - Syntax related and other PR's are welcomed  ❤️ .
