@@ -102,3 +102,6 @@ exe "hi GitGutterChange guifg=".s:uwu1_gui
 exe "hi GitGutterDelete guifg=".s:uwu3_gui 
 exe "hi GitGutterChangeDelete guifg=".s:uwu4_gui
 exe "hi GitGutterLineHighlightsEnable guifg=".s:uwu9_gui." guibg=".s:uwu8_gui  
+
+" ColorColumn 
+exe "hi ColorColumn guifg=".s:uwu8_gui 
