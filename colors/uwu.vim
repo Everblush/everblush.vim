@@ -26,7 +26,7 @@ syntax reset
 let g:colors_name = "uwu"
 set background=dark
 set t_Co=256
-hi Normal guifg=#C5C8C9 ctermfg=NONE guibg=#0f1315 gui=NONE
+hi Normal guifg=#C5C8C9 ctermbg=NONE guibg=#0f1315 gui=NONE
 
 "Syntax Highlighting 
 exe "hi CursorLineNR guifg=" .s:uwu0_gui 
@@ -71,10 +71,9 @@ exe "hi PMenuSel guifg=".s:uwu8_gui." guibg=".s:uwu10_gui
 exe "hi SignColumn guibg=" .s:uwu0_gui 
 exe "hi Title guifg=" .s:uwu3_gui 
 exe "hi LineNr guifg=".s:uwu8_gui 
-exe "hi NonText guifg=".s:uwu5_gui  
+exe "hi NonText guifg=".s:uwu5_gui." guibg=".s:uwu0_gui 
 exe "hi Comment guifg=".s:uwu8_gui
 exe "hi SpecialComment guifg=".s:uwu8_gui "gui=italic guibg=NONE "
-exe "hi CursorLine guibg=".s:uwu8_gui
 exe "hi TabLineFill gui=NONE guibg=".s:uwu8_gui 
 exe "hi TabLine guifg=".s:uwu7_gui." guibg=".s:uwu8_gui
 exe "hi StatusLine guibg=".s:uwu0_gui." guifg=".s:uwu7_gui 
@@ -103,5 +102,4 @@ exe "hi GitGutterDelete guifg=".s:uwu3_gui
 exe "hi GitGutterChangeDelete guifg=".s:uwu4_gui
 exe "hi GitGutterLineHighlightsEnable guifg=".s:uwu9_gui." guibg=".s:uwu8_gui  
 
-" ColorColumn 
-exe "hi ColorColumn guibg=".s:uwu8_gui 
+" Cs Highlightings 
