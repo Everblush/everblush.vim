@@ -4,19 +4,19 @@
 " LICENSE: MIT  
 
 " Setting up the colors 
-let s:uwu0_gui = "#2F3131" 
+let s:uwu0_gui = "#202829" 
 let s:uwu1_gui = "#e74c4c"
 let s:uwu2_gui = "#6bb05d" 
 let s:uwu3_gui = "#e59e67" 
-let s:uwu4_gui = "#5b98a9" 
+let s:uwu4_gui = "#53A7BF" 
 let s:uwu5_gui = "#ef7cbb" 
 let s:uwu6_gui = "#51a39f" 
-let s:uwu7_gui = "#51a39f" 
+let s:uwu7_gui = "#c4c4c4" 
 let s:uwu8_gui = "#343636" 
 let s:uwu9_gui = "#c26f6f"
 let s:uwu10_gui = "#8dc776" 
 let s:uwu11_gui = "#e7ac7e" 
-let s:uwu12_gui = "#7ab3c3"
+let s:uwu12_gui = "#6CBAD1"
 let s:uwu13_gui = "#d3869b" 
 let s:uwu14_gui = "#6db0ad"
 let s:uwu15_gui = "#bfbfbf" 
@@ -26,75 +26,81 @@ syntax reset
 let g:colors_name = "uwu"
 set background=dark
 set t_Co=256
-hi Normal guifg=#C5C8C9  ctermbg=NONE guibg=#0f1315 gui=NONE
+hi Normal guifg=#C5C8C9 ctermfg=NONE guibg=#0f1315 gui=NONE
 
-hi CursorLineNR guibg=NONE guifg=#2B3936   
-hi CursorLine guibg= #2B3936 
-hi DiffText guifg=#e7ac7e guibg=NONE
-hi ErrorMsg guifg=#e74c4c guibg=NONE
-hi WarningMsg guifg=#2F3131  guibg=NONE
-hi PreProc guifg=#6bb05d guibg=NONE
-hi Exception guifg=#2F3131  guibg=NONE
-hi Error guifg=#e74c4c guibg=NONE
-hi DiffDelete guifg=#e74c4c guibg=NONE
-hi GitGutterDelete guifg=#e74c4c guibg=NONE
-hi GitGutterChangeDelete guifg=#e74c4c guibg=NONE
-hi cssIdentifier guifg=#5b98a9 guibg=NONE
-hi cssImportant guifg=#ef7cbb guibg=NONE
-hi Type guifg=#e59e67 guibg=NONE
-hi Identifier guifg=#e74c4c guibg=NONE
-hi Constant guifg=#51a39f guibg=NONE
-hi Repeat guifg=#ef7cbb guibg=NONE
-hi DiffAdd guifg=#8dc776 guibg=NONE
-hi GitGutterAdd guifg=#8dc776 guibg=NONE
-hi cssIncludeKeyword guifg=#d3869b guibg=NONE
-hi Keyword guifg=#5b98a9 guibg=NONE
-hi IncSearch guifg=#e59e67 guibg=NONE
-hi Title guifg=#6bb05d guibg=NONE
-hi PreCondit guifg=#ef7cbb guibg=NONE
-hi Debug guifg=#C5C8C9 guibg=NONE
-hi SpecialChar guifg=#5b98a9 guibg=NONE
-hi Conditional guifg=#ef7cbb guibg=NONE
-hi Todo guifg=#ef7cbb guibg=#FF008F gui=NONE
-hi Special guifg=#5b98a9 guibg=NONE
-hi Label guifg=#5b98a9 guibg=NONE
-hi Delimiter guifg=#c4c4c4 guibg=NONE
-hi Number guifg=#e59e67 guibg=NONE
-hi Define guifg=#51a39f guibg=NONE
-hi MoreMsg guifg=#6bb05d guibg=NONE
-hi Tag guifg=#bfbfbf guibg=NONE
-hi String guifg=#6bb05d guibg=NONE
-hi MatchParen guifg=#e74c4c guibg=NONE
-hi Macro guifg=#ef7cbb guibg=NONE
-hi DiffChange guifg=#5b98a9 guibg=NONE
-hi GitGutterChange guifg=#5b98a9 guibg=NONE
-hi cssColor guifg=#5b98a9 guibg=NONE
-hi Function guifg=#5b98a9 guibg=NONE
-hi Directory guifg=#3a3c3d guibg=NONE
-hi markdownLinkText guifg=#c26f6f guibg=NONE
-hi javaScriptBoolean guifg=#c26f6f guibg=NONE
-hi Include guifg=#e74c4c  guibg=NONE
-hi Storage guifg=#d3869b guibg=NONE
-hi cssClassName guifg=#946fa8 guibg=NONE
-hi cssClassNameDot guifg=#946fa8 guibg=NONE
-hi Statement guifg=#ef7cbb guibg=NONE
-hi Operator guifg=#ef7cbb guibg=NONE
-hi cssAttr guifg=#ef7cbb guibg=NONE
-hi colorcolumn guifg=#313B39 guibg=#313B39  
-hi PMenu guifg=#C5C8C9  guibg=#2F3131  
-hi PMenuSel guifg=#0F1315 guibg=#8dc776 
-hi SignColumn guibg=#0f1315 
-hi Title guifg=#e59e67
-hi LineNr guifg=#303435 guibg=#0f1315
-hi NonText guifg=#ff81e6 guibg=#0f1315
-hi Comment guifg=#323638 gui=italic
-hi SpecialComment guifg=#303435 gui=italic guibg=NONE 
-hi CursorLine guibg=#303435
-hi TabLineFill gui=NONE guibg=#303435
-hi TabLine guifg=#c4c4c4 guibg=#303435 gui=NONE
-hi StatusLine gui=italic guibg=#0f1315 guifg=#C5C8C9 
-hi StatusLineNC gui=NONE guibg=#0f1315 guifg=#C5C8C9 
-hi Search guibg=#303435 guifg=#5b98a9
-hi VertSplit gui=NONE guifg=NONE guibg=#2F3131 
-hi Visual gui=NONE guibg=#303435
- 
+"Syntax Highlighting 
+exe "hi CursorLineNR guifg=" .s:uwu0_gui 
+exe "hi CursorLine guibg=" .s:uwu0_gui 
+exe "hi ErrorMsg guifg=" .s:uwu1_gui." guibg=".s:uwu8_gui  
+exe "hi WarningMsg guifg=" .s:uwu0_gui 
+exe "hi PreProc guifg=" .s:uwu4_gui 
+exe "hi Exception guifg=" .s:uwu0_gui 
+exe "hi Error guifg=" .s:uwu1_gui
+exe "hi Type guifg=" .s:uwu3_gui 
+exe "hi Identifier guifg=" .s:uwu1_gui 
+exe "hi Constant guifg=" .s:uwu6_gui 
+exe "hi Repeat guifg=" .s:uwu5_gui 
+exe "hi Keyword guifg=" .s:uwu4_gui 
+exe "hi IncSearch guifg=" .s:uwu3_gui 
+exe "hi Title guifg=" .s:uwu2_gui  
+exe "hi PreCondit guifg=" .s:uwu5_gui 
+exe "hi Debug guifg=" .s:uwu13_gui
+exe "hi SpecialChar guifg=" .s:uwu4_gui 
+exe "hi Conditional guifg=" .s:uwu1_gui 
+exe "hi Todo guifg=" .s:uwu5_gui 
+exe "hi Special guifg=" .s:uwu4_gui 
+exe "hi Label guifg=" .s:uwu12_gui 
+exe "hi Delimiter guifg=" .s:uwu7_gui 
+exe "hi Number guifg=" .s:uwu8_gui 
+exe "hi Define guifg=" .s:uwu6_gui 
+exe "hi MoreMsg guifg=" .s:uwu14_gui 
+exe "hi Tag guifg=" .s:uwu15_gui 
+exe "hi String guifg=" .s:uwu2_gui  
+exe "hi MatchParen guifg=" .s:uwu1_gui 
+exe "hi Macro guifg=" .s:uwu5_gui 
+exe "hi Function guifg=" .s:uwu4_gui 
+exe "hi Directory guifg=" .s:uwu7_gui 
+exe "hi markdownLinkText guifg=" .s:uwu9_gui 
+exe "hi Include guifg=" .s:uwu1_gui  
+exe "hi Storage guifg=" .s:uwu9_gui 
+exe "hi Statement guifg=" .s:uwu5_gui 
+exe "hi Operator guifg=" .s:uwu4_gui 
+exe "hi colorcolumn guifg=" .s:uwu8_gui 
+exe "hi PMenu guifg=".s:uwu7_gui." guibg=" .s:uwu0_gui   
+exe "hi PMenuSel guifg=".s:uwu8_gui." guibg=".s:uwu10_gui  
+exe "hi SignColumn guibg=" .s:uwu0_gui 
+exe "hi Title guifg=" .s:uwu3_gui 
+exe "hi LineNr guifg=".s:uwu8_gui 
+exe "hi NonText guifg=".s:uwu5_gui." guibg=".s:uwu0_gui 
+exe "hi Comment guifg=".s:uwu8_gui
+exe "hi SpecialComment guifg=".s:uwu8_gui "gui=italic guibg=NONE "
+exe "hi CursorLine guibg=".s:uwu8_gui
+exe "hi TabLineFill gui=NONE guibg=".s:uwu8_gui 
+exe "hi TabLine guifg=".s:uwu7_gui." guibg=".s:uwu8_gui
+exe "hi StatusLine guibg=".s:uwu0_gui." guifg=".s:uwu7_gui 
+exe "hi StatusLineNC guibg=".s:uwu0_gui." guifg=".s:uwu7_gui
+exe "hi Search guibg=".s:uwu8_gui." guifg=".s:uwu4_gui
+exe "hi VertSplit gui=NONE guifg=".s:uwu8_gui." guibg=".s:uwu0_gui 
+exe "hi Visual gui=NONE guibg=".s:uwu0_gui
+exe "hi Underlined guifg=".s:uwu3_gui 
+
+" Spell Highlightings 
+exe "hi SpellBad guifg=".s:uwu1_gui 
+exe "hi SpellCap guifg=".s:uwu1_gui." guibg=".s:uwu8_gui 
+exe "hi SpellLocal guifg=".s:uwu4_gui 
+exe "hi SpellRare guifg=".s:uwu5_gui 
+
+" Diff Highlightings 
+exe "hi DiffAdd guifg=".s:uwu2_gui 
+exe "hi DiffChange guifg=".s:uwu5_gui 
+exe "hi DiffDelete guifg=".s:uwu6_gui 
+exe "hi DiffText guifg=".s:uwu1_gui 
+
+" GitGutter Highlightings 
+exe "hi GitGutterAdd guifg=".s:uwu3_gui 
+exe "hi GitGutterChange guifg=".s:uwu1_gui 
+exe "hi GitGutterDelete guifg=".s:uwu3_gui 
+exe "hi GitGutterChangeDelete guifg=".s:uwu4_gui
+exe "hi GitGutterLineHighlightsEnable guifg=".s:uwu9_gui." guibg=".s:uwu8_gui  
+
+" Cs Highlightings 
