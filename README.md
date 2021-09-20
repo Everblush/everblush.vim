@@ -2,7 +2,7 @@
 	<img src="assets/uwu.png" alt="uwu colorscheme">
 </p>
 <p align="center">
-A dark independent vim/neovim colorscheme >.< 
+A beautiful and dark vim colorscheme >.< 
 </p>
 
 <p align="center"> 
