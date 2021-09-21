@@ -65,7 +65,7 @@ exe "hi Include guifg=" .s:uwu1_gui
 exe "hi Storage guifg=" .s:uwu9_gui 
 exe "hi Statement guifg=" .s:uwu5_gui 
 exe "hi Operator guifg=" .s:uwu4_gui 
-exe "hi colorcolumn guifg=" .s:uwu8_gui 
+exe "hi ColorColumn guibg=" .s:uwu8_gui  
 exe "hi PMenu guifg=".s:uwu7_gui." guibg=" .s:uwu0_gui   
 exe "hi PMenuSel guifg=".s:uwu8_gui." guibg=".s:uwu10_gui  
 exe "hi SignColumn guibg=" .s:uwu0_gui 
@@ -163,3 +163,37 @@ exe "hi TSTypeBuiltin guifg=".s:uwu3_gui
 exe "hi TSVariable guifg=".s:uwu4_gui
 exe "hi TSVariableBuiltin guifg=".s:uwu4_gui 
 
+" C Language Higlights 
+exe "hi cConstant guifg=".s:uwu4_gui 
+exe "hi cCppBracket guifg=".s:uwu7_gui 
+exe "hi cCppInElse guifg=".s:uwu7_gui 
+exe "hi cCppInElse2 guifg=".s:uwu7_gui 
+exe "hi cCppInIf guifg=".s:uwu4_gui 
+exe "hi cCppInSkip guifg=".s:uwu7_gui 
+exe "hi cCppInWapper guifg=".s:uwu5_gui 
+exe "hi cCppOutElse guifg=".s:uwu7_gui 
+exe "hi cCppOutIf guifg=".s:uwu8_gui 
+exe "hi cCppOutIf2 guifg=".s:uwu8_gui
+exe "hi cCppOutInGroup guifg=".s:uwu8_gui 
+exe "hi cCppOutSkip guifg=".s:uwu8_gui 
+exe "hi cCppOutWrapper guifg=".s:uwu5_gui 
+exe "hi cCppParen guifg=".s:uwu7_gui 
+exe "hi cCppString guifg=".s:uwu2_gui 
+exe "hi cCurlyError guifg=".s:uwu7_gui." guibg=".s:uwu9_gui 
+exe "hi cErrInBracket guifg=".s:uwu7_gui." guibg=".s:uwu9_gui 
+exe "hi cErrInParen guifg=".s:uwu7_gui." guibg=".s:uwu9_gui 
+exe "hi cFloat guifg=".s:uwu8_gui 
+exe "hi cFormat guifg=".s:uwu4_gui 
+exe "hi cMutli guifg=".s:uwu3_gui 
+exe "hi cOperator guifg=".s:uwu4_gui 
+exe "hi cParen guifg=".s:uwu3_gui 
+exe "hi cParenError guifg=".s:uwu7_gui." guibg=".s:uwu9_gui
+exe "hi PreProcGroup guifg=".s:uwu4_gui 
+exe "hi cSpaceError guifg=".s:uwu1_gui 
+exe "hi cSpecial guifg=".s:uwu4_gui 
+exe "hi cSpecialCharacter guifg=".s:uwu4_gui 
+exe "hi cStatement guifg=".s:uwu5_gui 
+exe "hi cStorageClass guifg=".s:uwu3_gui 
+exe "hi cString guifg=".s:uwu2_gui 
+exe "hi cType guifg=".s:uwu3_gui 
+exe "hi cUserCont guifg=".s:uwu7_gui 
