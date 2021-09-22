@@ -196,4 +196,6 @@ exe "hi cStatement guifg=".s:uwu5_gui
 exe "hi cStorageClass guifg=".s:uwu3_gui 
 exe "hi cString guifg=".s:uwu2_gui 
 exe "hi cType guifg=".s:uwu3_gui 
-exe "hi cUserCont guifg=".s:uwu7_gui 
+exe "hi cUserCont guifg=".s:uwu7_gui
+
+
