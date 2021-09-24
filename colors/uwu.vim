@@ -4,15 +4,15 @@
 " LICENSE: MIT  
 
 " Setting up the colors 
-let s:uwu0_gui = "#202829" 
+let s:uwu0_gui = "#1b2224" 
 let s:uwu1_gui = "#e74c4c"
 let s:uwu2_gui = "#6bb05d" 
 let s:uwu3_gui = "#e59e67" 
 let s:uwu4_gui = "#53A7BF" 
 let s:uwu5_gui = "#ef7cbb" 
 let s:uwu6_gui = "#51a39f" 
-let s:uwu7_gui = "#c4c4c4" 
-let s:uwu8_gui = "#343636" 
+let s:uwu7_gui = "#bcbcbc" 
+let s:uwu8_gui = "#303739" 
 let s:uwu9_gui = "#c26f6f"
 let s:uwu10_gui = "#8dc776" 
 let s:uwu11_gui = "#e7ac7e" 
@@ -26,7 +26,7 @@ syntax reset
 let g:colors_name = "uwu"
 set background=dark
 set t_Co=256
-hi Normal guifg=#C5C8C9 ctermbg=NONE guibg=#0f1315 gui=NONE
+hi Normal guifg=#C5C8C9 ctermbg=NONE guibg=#131A1C gui=NONE
 
 "Syntax Highlighting 
 exe "hi CursorLineNR guifg=" .s:uwu0_gui 
@@ -63,7 +63,7 @@ exe "hi Directory guifg=" .s:uwu7_gui
 exe "hi markdownLinkText guifg=" .s:uwu9_gui 
 exe "hi Include guifg=" .s:uwu1_gui  
 exe "hi Storage guifg=" .s:uwu9_gui 
-exe "hi Statement guifg=" .s:uwu5_gui 
+exe "hi Statement guifg=" .s:uwu3_gui 
 exe "hi Operator guifg=" .s:uwu4_gui 
 exe "hi ColorColumn guibg=" .s:uwu8_gui  
 exe "hi PMenu guifg=".s:uwu7_gui." guibg=" .s:uwu0_gui   
@@ -197,5 +197,3 @@ exe "hi cStorageClass guifg=".s:uwu3_gui
 exe "hi cString guifg=".s:uwu2_gui 
 exe "hi cType guifg=".s:uwu3_gui 
 exe "hi cUserCont guifg=".s:uwu7_gui
-
-
