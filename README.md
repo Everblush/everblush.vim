@@ -36,9 +36,9 @@ A beautiful and dark vim colorscheme >.<
   endfunc 
 
 # Terminal Config
-- ![Alacritty](https://github.com/mangeshrex/dotfiles/tree/main/uWu/alacritty/alacritty.yml) 
-- ![Kitty](https://github.com/Mangeshrex/dotfiles/tree/main/uWu/kitty/kitty.conf) 
-- ![Xresources](https://github.com/Mangeshrex/dotfiles/blob/main/uWu/.Xresources) 
+- ![Alacritty](https://github.com/mangeshrex/uwu.vim/tree/main/assets/alacritty.yml) 
+- ![Kitty](https://github.com/Mangeshrex/uwu.vim/tree/main/assets/kitty.conf) 
+- ![Xresources](https://github.com/Mangeshrex/uwu.vim/tree/main/assets/.Xresources) 
 
 # Contribute 
 - Syntax related and other PR's are welcomed  ❤️ .
