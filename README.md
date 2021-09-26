@@ -35,13 +35,6 @@ A beautiful and dark vim colorscheme >.<
     echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
   endfunc 
 
-# Screenshot 
-- Independently with Vim 
-<img src="assets/uwu-vim.png" alt="uwu with vim"> 
-
-- uWu with <a href="https://github.com/NvChad/NvChad">NvChad</a> 
-<img src="assets/uwu-nvchad.png" alt="uwu colors with nvchad"> 
-
 # Terminal Config
 - ![Alacritty](https://github.com/mangeshrex/dotfiles/tree/main/uWu/alacritty/alacritty.yml) 
 - ![Kitty](https://github.com/Mangeshrex/dotfiles/tree/main/uWu/kitty/kitty.conf) 
