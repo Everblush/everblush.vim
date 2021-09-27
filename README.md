@@ -7,7 +7,6 @@ A beautiful and dark vim colorscheme >.<
 
 
 <p align="center"> 
-<img src="https://img.shields.io/badge/Made%20with%20VIMSCRIPT-blueviolet.svg?style=for-the-badge&logo=vim"> 
 <img src="https://img.shields.io/github/stars/Mangeshrex/uwu.vim?color=d3869b&labelColor=1b2224&style=for-the-badge"> <img src="https://img.shields.io/github/issues/Mangeshrex/uwu.vim?color=e7ac7e&labelColor=1b2224&style=for-the-badge">  
 <img src="https://img.shields.io/static/v1?label=license&message=MIT&color=5b98a9&labelColor=1b2224&style=for-the-badge"> 
 <img src="https://img.shields.io/github/forks/Mangeshrex/uwu.vim?color=e74c4c&labelColor=1b2224&style=for-the-badge"> <img src="https://img.shields.io/static/v1?label=PR%27s&message=Welcomed&color=51a39f&labelColor=1b2224&style=for-the-badge"> 
