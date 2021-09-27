@@ -1,10 +1,9 @@
 <p align-"center"> 
-	<img src="assets/uwu.png" alt="uwu colorscheme">
+	<img src="assets/uwu-templates.png" alt="uwu colorscheme">
 </p>
 <p align="center">
 A beautiful and dark vim colorscheme >.< 
 </p>
-
 
 <p align="center"> 
 <img src="https://img.shields.io/github/stars/Mangeshrex/uwu.vim?color=d3869b&labelColor=1b2224&style=for-the-badge"> <img src="https://img.shields.io/github/issues/Mangeshrex/uwu.vim?color=e7ac7e&labelColor=1b2224&style=for-the-badge">  
@@ -13,12 +12,14 @@ A beautiful and dark vim colorscheme >.<
 </p> 
 
 # Installation 
+- Vim-Ply 
+- First install ![vim-plug](https://github.com/junegunn/vim-plug). 
 - ```Plug 'mangeshrex/uwu.vim' ``` 
 - Add ```colorscheme uwu``` to .vimrc or init.vim. 
 
 # Terminal Config
 - <a href="https://github.com/mangeshrex/uwu.vim/tree/main/assets/alacritty.yml">Alacritty</a>
-- <a href="https://github.com/Mangeshrex/uwu.vim/tree/main/assets/kitty.conf">kitty</a>
+- <a href="https://github.com/Mangeshrex/uwu.vim/tree/main/assets/kitty.conf">Kitty</a>
 - <a href="https://github.com/Mangeshrex/uwu.vim/tree/main/assets/.Xresources">Xresources</a> 
 
 # Contribute 
@@ -29,4 +30,6 @@ A beautiful and dark vim colorscheme >.<
 - [ ] Beautifying the colors more. 
 - [ ] Adding support for all other programs + apps. 
 
-Sorry, but I might be slow. 
+At this moment UwU colorscheme is at its beginning and needs to be ported to most of the programs used in day to day life. So, if anyone of you feels you can port it to your favourite programs then PR's heartily welcomed.  
+
+

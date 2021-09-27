@@ -9,7 +9,7 @@ let s:uwu1_gui = "#e74c4c"
 let s:uwu2_gui = "#6bb05d" 
 let s:uwu3_gui = "#e59e67" 
 let s:uwu4_gui = "#53A7BF" 
-let s:uwu5_gui = "#ef7cbb" 
+let s:uwu5_gui = "#CD69CC" 
 let s:uwu6_gui = "#51a39f" 
 let s:uwu7_gui = "#bcbcbc" 
 let s:uwu8_gui = "#303739" 
@@ -17,7 +17,7 @@ let s:uwu9_gui = "#c26f6f"
 let s:uwu10_gui = "#8dc776" 
 let s:uwu11_gui = "#e7ac7e" 
 let s:uwu12_gui = "#6CBAD1"
-let s:uwu13_gui = "#d3869b" 
+let s:uwu13_gui = "#E182E0" 
 let s:uwu14_gui = "#6db0ad"
 let s:uwu15_gui = "#bfbfbf" 
 
@@ -28,19 +28,27 @@ set background=dark
 set t_Co=256
 hi Normal guifg=#C5C8C9 ctermbg=NONE guibg=#131A1C gui=NONE
 
+set t_Co=256
+let &t_ut=''
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
+
 "Syntax Highlighting 
 exe "hi CursorLineNR guifg=" .s:uwu0_gui 
 exe "hi CursorLine guibg=" .s:uwu0_gui 
 exe "hi ErrorMsg guifg=" .s:uwu1_gui." guibg=".s:uwu8_gui  
 exe "hi WarningMsg guifg=" .s:uwu0_gui 
 exe "hi PreProc guifg=" .s:uwu4_gui 
-exe "hi Exception guifg=" .s:uwu0_gui 
+exe "hi Exception guifg=" .s:uwu7_gui 
 exe "hi Error guifg=" .s:uwu1_gui
 exe "hi Type guifg=" .s:uwu3_gui 
 exe "hi Identifier guifg=" .s:uwu1_gui 
-exe "hi Constant guifg=" .s:uwu6_gui 
+exe "hi Constant guifg=" .s:uwu3_gui 
 exe "hi Repeat guifg=" .s:uwu5_gui 
-exe "hi Keyword guifg=" .s:uwu4_gui 
+exe "hi Keyword guifg=" .s:uwu5_gui 
 exe "hi IncSearch guifg=" .s:uwu3_gui 
 exe "hi Title guifg=" .s:uwu2_gui  
 exe "hi PreCondit guifg=" .s:uwu5_gui 
@@ -59,7 +67,7 @@ exe "hi String guifg=" .s:uwu2_gui
 exe "hi MatchParen guifg=" .s:uwu1_gui 
 exe "hi Macro guifg=" .s:uwu5_gui 
 exe "hi Function guifg=" .s:uwu4_gui 
-exe "hi Directory guifg=" .s:uwu7_gui 
+exe "hi Directory guifg=" .s:uwu4_gui 
 exe "hi markdownLinkText guifg=" .s:uwu9_gui 
 exe "hi Include guifg=" .s:uwu1_gui  
 exe "hi Storage guifg=" .s:uwu9_gui 
@@ -67,7 +75,7 @@ exe "hi Statement guifg=" .s:uwu3_gui
 exe "hi Operator guifg=" .s:uwu4_gui 
 exe "hi ColorColumn guibg=" .s:uwu8_gui  
 exe "hi PMenu guifg=".s:uwu7_gui." guibg=" .s:uwu0_gui   
-exe "hi PMenuSel guifg=".s:uwu8_gui." guibg=".s:uwu10_gui  
+exe "hi PMenuSel guifg=".s:uwu8_gui." guibg=".s:uwu5_gui  
 exe "hi SignColumn guibg=" .s:uwu0_gui 
 exe "hi Title guifg=" .s:uwu3_gui 
 exe "hi LineNr guifg=".s:uwu8_gui 
@@ -197,3 +205,56 @@ exe "hi cStorageClass guifg=".s:uwu3_gui
 exe "hi cString guifg=".s:uwu2_gui 
 exe "hi cType guifg=".s:uwu3_gui 
 exe "hi cUserCont guifg=".s:uwu7_gui
+
+" GoLang Highlight Groups 
+exe "hi goBlock guifg=".s:uwu7_gui 
+exe "hi goBuiltins guifg=".s:uwu13_gui 
+exe "hi goCharacter guifg=".s:uwu1_gui 
+exe "hi goComment guifg=".s:uwu8_gui
+exe "hi goComplexes guifg=".s:uwu3_gui 
+exe "hi goConditional guifg=".s:uwu5_gui 
+exe "hi goConstants guifg=".s:uwu5_gui 
+exe "hi goDecimalInt  guifg=".s:uwu3_gui 
+exe "hi goDeclType guifg=".s:uwu13_gui 
+exe "hi goDeclaration guifg=".s:uwu5_gui 
+exe "hi goDirective guifg=".s:uwu1_gui 
+exe "hi goEscapeC guifg=".s:uwu4_gui 
+exe "hi goEscapeBigU guifg=".s:uwu4_gui 
+exe "hi goEscapeError guifg=".s:uwu0_gui." guibg=".s:uwu1_gui 
+exe "hi goEscapeOctal guifg=".s:uwu4_gui 
+exe "hi goEscapeU guifg=".s:uwu4_gui 
+exe "hi goEscapeX guifg=".s:uwu4_gui 
+exe "hi goExtraType guifg=".s:uwu3_gui 
+exe "hi goFloat guifg=".s:uwu11_gui 
+exe "hi goFloats guifg=".s:uwu12_gui 
+exe "hi goHexadecimalInt guifg=".s:uwu3_gui 
+exe "hi goImaginary guifg=".s:uwu3_gui 
+exe "hi goLabel guifg=".s:uwu3_gui 
+exe "hi goOctalError guifg=".s:uwu1_gui 
+exe "hi goOctalInt guifg=".s:uwu11_gui 
+exe "hi goParen guifg=".s:uwu7_gui 
+exe "hi goRawString guifg=".s:uwu10_gui 
+exe "hi goRepeat guifg=".s:uwu3_gui 
+exe "hi goSignedInts guifg=".s:uwu11_gui  
+exe "hi goSpaceError guifg=".s:uwu0_gui." guibg=".s:uwu1_gui 
+exe "hi goSpecialString guifg=".s:uwu12_gui 
+exe "hi goStatement guifg=".s:uwu1_gui 
+exe "hi goString guifg=".s:uwu10_gui 
+exe "hi goTSComment guifg=".s:uwu8_gui
+exe "hi goTSFunction guifg=".s:uwu4_gui 
+exe "hi goTSInclude guifg=".s:uwu4_gui 
+exe "hi goTSkeyword guifg=".s:uwu5_gui 
+exe "hi goTSKeywordFunction guifg=".s:uwu5_gui 
+exe "hi goTSMethod guifg=".s:uwu4_gui 
+exe "hi goTSNumber guifg=".s:uwu8_gui 
+exe "hi goTSOperator guifg=".s:uwu12_gui
+exe "hi goTSProperty guifg=".s:uwu1_gui 
+exe "hi goTSPunctBracket guifg=".s:uwu6_gui
+exe "hi goTSPunctDelimiter guifg=".s:uwu13_gui 
+exe "hi goTSRepeat guifg=".s:uwu3_gui 
+exe "hi goTSString guifg=".s:uwu10_gui 
+exe "hi goTSType guifg=".s:uwu3_gui 
+exe "hi goTSTypeBuiltin guifg=".s:uwu3_gui  
+exe "hi goTSVariable guifg=".s:uwu5_gui 
+exe "hi goTodo guifg=".s:uwu3_gui 
+exe "hi goType guifg=".s:uwu3_gui 
