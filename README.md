@@ -1,6 +1,7 @@
 <p align-"center"> 
-	<img src="assets/uwu-template.png" alt="uwu colorscheme">
+	<img src="assets/uwu.png" alt="uwu colorscheme">
 </p>
+
 <p align="center">
 A beautiful and dark vim colorscheme >.< 
 </p>
