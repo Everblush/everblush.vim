@@ -13,8 +13,8 @@ A beautiful and dark vim colorscheme >.<
 </p> 
 
 # Installation 
-- Vim-Ply 
-- First install ![vim-plug](https://github.com/junegunn/vim-plug). 
+- Vim-Plug
+- First install <a href="https://github.com/junegunn/vim-plug">vim-plug</a> . 
 - ```Plug 'mangeshrex/uwu.vim' ``` 
 - Add ```colorscheme uwu``` to .vimrc or init.vim. 
 
