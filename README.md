@@ -1,4 +1,4 @@
-<p align-"center"> 
+<p align-"center" class="img-thumbnail"> 
 	<img src="assets/uwu-vim.gif" alt="uwu colorscheme">
 </p>
 
