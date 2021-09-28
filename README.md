@@ -1,5 +1,5 @@
 <p align-"center" class="img-thumbnail"> 
-	<img src="assets/uwu-vim.gif" alt="uwu colorscheme">
+	<img src="assets/uwu.png" alt="uwu colorscheme">
 </p>
 
 <p align="center">
