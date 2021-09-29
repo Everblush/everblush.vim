@@ -1,10 +1,7 @@
-<p align-"center" class="img-thumbnail"> 
-	<img src="assets/uwu.png" alt="uwu colorscheme">
-</p>
-
-<p align="center">
+<p align="center"> 
+<img src="https://raw.githubusercontent.com/Mangeshrex/uwu.vim/main/assets/uwu-template.png" alt="template">
 A beautiful and dark vim colorscheme >.< 
-</p>
+</p> 
 
 <p align="center"> 
 <img src="https://img.shields.io/github/stars/Mangeshrex/uwu.vim?color=d3869b&labelColor=1b2224&style=for-the-badge"> <img src="https://img.shields.io/github/issues/Mangeshrex/uwu.vim?color=e7ac7e&labelColor=1b2224&style=for-the-badge">  
