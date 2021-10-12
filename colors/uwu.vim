@@ -259,9 +259,8 @@ exe "hi goTSTypeBuiltin guifg=".s:uwu3_gui
 exe "hi goTSVariable guifg=".s:uwu5_gui 
 exe "hi goTodo guifg=".s:uwu3_gui 
 exe "hi goType guifg=".s:uwu3_gui 
-<<<<<<< HEAD
 
-" NvimTreeSitter Highlights 
+" NvimTree Highlights 
 exe "hi NvimTreeFolderIcon guifg=".s:uwu3_gui 
 exe "hi NvimTreeFoldername guifg=".s:uwufg_gui 
 exe "hi NvimTreeOpenedFolderName guifg=".s:uwu4_gui 
@@ -272,7 +271,3 @@ exe "hi NvimTreeGitDirty guifg=".s:uwu1_gui
 exe "hi NvimTreeGitDeleted guifg=".s:uwu1_gui 
 exe "hi NvimTreeRootFolder guifg=".s:uwu5_gui 
 exe "hi NvimTreeIndentMarker guifg=".s:uwu0_gui 
-exe "hi NvimTreeNormal guifg=".s:uwu1_gui 
-exe "hi NvimTreeVertSplit guifg=".s:uwu0_gui 
-=======
->>>>>>> c4d51632dd4120ead5ff71f17000769011704b77
