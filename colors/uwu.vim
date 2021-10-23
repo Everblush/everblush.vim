@@ -21,6 +21,7 @@ let s:uwu13_gui = "#E182E0"
 let s:uwu14_gui = "#6db0ad"
 let s:uwu15_gui = "#bfbfbf" 
 let s:uwubg_gui = "#131A1C"
+let s:uwufg_gui = "#C5C8C9" 
 
 hi clear
 syntax reset
