@@ -50,6 +50,9 @@
 - <a href="https://github.com/Mangeshrex/uwu.vim/tree/main/assets/kitty.conf">Kitty</a>
 - <a href="https://github.com/Mangeshrex/uwu.vim/tree/main/assets/.Xresources">Xresources</a> 
 
+## Other 
+- A VsCode port has been made for UwU, do check it out ![here](https://github.com/Mangeshrex/uwu-vscode-theme)
+
 ## TO-DO 
 - [ ] Adding some famous statusline support. 
 - [ ] Beautifying the colors more. 
