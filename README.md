@@ -24,26 +24,27 @@
 </p> 
 
 ## Hex Colors Codes 
-| Color  | Hex Code |   
-| :--- | :---: |  
-| s:uwufg_gui | #c5c8c9 |   
-| s:uwubg_gui | #131A1C | 
-| s:uwu0_gui | #1b2224 | 
-| s:uwu1_gui | #e74c4c | 
-| s:uwu2_gui | #6bb05d  | 
-| s:uwu3_gui | #e59e67  | 
-| s:uwu4_gui | #53A7BF  | 
-| s:uwu5_gui | #CD69CC  | 
-| s:uwu6_gui | #51a39f  | 
-| s:uwu7_gui | #bcbcbc  | 
-| s:uwu8_gui | #454c4e  | 
-| s:uwu9_gui | #c26f6f  |
-| s:uwu10_gui | #8dc776   | 
-| s:uwu11_gui | #e7ac7e  | 
-| s:uwu12_gui | #6CBAD1  | 
-| s:uwu13_gui | #E182E0  | 
-| s:uwu14_gui | #6db0ad  | 
-| s:uwu15_gui | #bfbfbf  | 
+| Color          | Hex Code |   
+| :------------  | :------: |  
+| Foreground     | #c5c8c9  |   
+| Background     | #131a1c  | 
+| Black          | #1b2224  | 
+| Red            | #e74c4c  | 
+| Green          | #6bb05d  | 
+| Yellow         | #e59e67  | 
+| Blue           | #53a7bf  | 
+| Magenta        | #cd69cc  | 
+| Cyan           | #51a39f  | 
+| White          | #c4c4c4  | 
+| Bright Black   | #454c4e  | 
+| Bright Red     | #c26f6f  |
+| Bright Green   | #8dc776  | 
+| Bright Yellow  | #e7ac7e  | 
+| Bright Blue    | #6cbad1  | 
+| Bright Magenta | #e182e0  | 
+| Bright Cyan    | #6db0ad  | 
+| Bright White   | #cecece  | 
+
 
 ## Terminal Config
 - <a href="https://github.com/mangeshrex/uwu.vim/tree/main/assets/alacritty.yml">Alacritty</a>
