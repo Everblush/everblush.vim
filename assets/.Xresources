@@ -6,8 +6,8 @@
 *color0:  #1b2224 
 *color8:  #232a2c  
 ! DarkRed + Red
-*color1:  #e74c4c 
-*color9:  #C95454 
+*color1:  #f65b5b 
+*color9:  #c26f6f
 ! DarkGreen + Green
 *color2:  #6bb05d
 *color10: #8dc776
@@ -18,12 +18,12 @@
 *color4:  #58acc4   
 *color12: #6CBAD1 
 ! DarkMagenta + Magenta
-*color5:  #CD69CC
-*color13: #E182E0
+*color5:  #b185db
+*color13: #bb8fe5
 ! DarkCyan + Cyan
 *color6:  #51a39f  
 *color14: #6db0ad 
 ! LightGrey + White
 *color7:  #c4c4c4 
-*color15: #bfbfbf
+*color15: #cccccc
 

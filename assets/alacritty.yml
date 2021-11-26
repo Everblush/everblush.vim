@@ -227,11 +227,11 @@ colors:
   # Normal colors
   normal:
     black:   '0x1b2224'
-    red:     '0xe74c4c'
+    red:     '0xf65b5b'
     green:   '0x6bb05d'
     yellow:  '0xe59e67'
     blue:    '0x53A7BF'
-    magenta: '0xef7cbb'
+    magenta: '0xbb8fe5'
     cyan:    '0x51a39f'
     white:   '0xc4c4c4'
 
@@ -242,9 +242,9 @@ colors:
     green:   '0x8dc776'
     yellow:  '0xe7ac7e'
     blue:    '0x6CBAD1'
-    magenta: '0xd3869b'
+    magenta: '0xb185db'
     cyan:    '0x6db0ad'
-    white:   '0xbfbfbf'
+    white:   '0xcecece'
   # Dim colors
   #
   # If the dim colors are not set, they will be calculated automatically based
