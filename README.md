@@ -29,19 +29,19 @@
 | Foreground     | #c5c8c9  |   
 | Background     | #131a1c  | 
 | Black          | #1b2224  | 
-| Red            | #e74c4c  | 
+| Red            | #f65b5b  | 
 | Green          | #6bb05d  | 
 | Yellow         | #e59e67  | 
 | Blue           | #53a7bf  | 
-| Magenta        | #cd69cc  | 
+| Magenta        | #b185db  | 
 | Cyan           | #51a39f  | 
 | White          | #c4c4c4  | 
-| Bright Black   | #454c4e  | 
+| Bright Black   | #232a2c  | 
 | Bright Red     | #c26f6f  |
 | Bright Green   | #8dc776  | 
 | Bright Yellow  | #e7ac7e  | 
 | Bright Blue    | #6cbad1  | 
-| Bright Magenta | #e182e0  | 
+| Bright Magenta | #bb8fe5  | 
 | Bright Cyan    | #6db0ad  | 
 | Bright White   | #cecece  | 
 
@@ -52,12 +52,11 @@
 - <a href="https://github.com/Mangeshrex/uwu.vim/tree/main/assets/.Xresources">Xresources</a> 
 
 ## Other 
-- A VsCode port has been made for UwU, do check it out ![here](https://github.com/Mangeshrex/uwu-vscode-theme)
+- A VsCode port has been made for UwU, do check it out <a href="https://github.com/Mangeshrex/uwu-vscode-theme>herw</a> 
 
 ## TO-DO 
 - [ ] Adding some famous statusline support. 
-- [ ] Beautifying the colors more. 
-- [ ] Adding support for all other programs + apps. 
+- [•] Beautifying the colors more. 
 
 ## Contributing
 At this moment UwU colorscheme is at its beginning and needs to be ported to most of the programs used in day to day life. So, if anyone of you feels you can port it to your favourite programs then PR's heartily welcomed.  
