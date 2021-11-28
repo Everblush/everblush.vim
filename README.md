@@ -61,4 +61,4 @@
 ## Contributing
 At this moment UwU colorscheme is at its beginning and needs to be ported to most of the programs used in day to day life. So, if anyone of you feels you can port it to your favourite programs then PR's heartily welcomed.  
 
-
+Discussion --> <a href="https://github.com/Mangeshrex/uwu.vim/issues/14">here</a> 
