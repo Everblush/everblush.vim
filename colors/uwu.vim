@@ -86,8 +86,8 @@ exe "hi Comment guifg=".s:uwu8_gui
 exe "hi SpecialComment guifg=".s:uwu8_gui "gui=italic guibg=NONE "
 exe "hi TabLineFill gui=NONE guibg=".s:uwu8_gui 
 exe "hi TabLine guifg=".s:uwu7_gui." guibg=".s:uwu8_gui
-exe "hi StatusLine guibg=".s:uwubg_gui." guifg=".s:uwubg_gui 
-exe "hi StatusLineNC guibg=".s:uwubg_gui." guifg=".s:uwubg_gui
+exe "hi StatusLine guibg=".s:uwubg_gui." guifg=".s:uwufg_gui 
+exe "hi StatusLineNC guibg=".s:uwubg_gui." guifg=".s:uwufg_gui
 exe "hi Search guibg=".s:uwu8_gui." guifg=".s:uwu4_gui
 exe "hi VertSplit gui=NONE guifg=".s:uwu0_gui." guibg=".s:uwu0_gui 
 exe "hi Visual gui=NONE guibg=".s:uwu0_gui
