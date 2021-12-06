@@ -46,7 +46,7 @@ if !exists("g:UwuNR")
 endif
 
 if g:UwuNR == 0
-    let s:UwuNR_fg = ""
+    let s:UwuNR_fg = s:uwu0_gui
 endif
 
 
