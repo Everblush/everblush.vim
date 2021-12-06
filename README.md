@@ -10,13 +10,17 @@
 </p> 
 
 ## Installation 
-# Vim-Plug
-- First install <a href="https://github.com/junegunn/vim-plug">vim-plug</a> . 
-- ```Plug 'mangeshrex/uwu.vim' ``` 
+### Vim-Plug
+- First install <a href="https://github.com/junegunn/vim-plug">vim-plug</a>.
+```vimscript
+Plug 'mangeshrex/uwu.vim'
+``` 
 - Add ```colorscheme uwu``` to .vimrc or init.vim. 
 
-# PackerNvim 
-- `use { 'mangeshrex/uwu.vim' }`
+### PackerNvim 
+```lua
+use { 'mangeshrex/uwu.vim' }`
+```
 
 ## Screenshot 
 <p align="center"> 
@@ -52,11 +56,12 @@
 - <a href="https://github.com/Mangeshrex/uwu.vim/tree/main/assets/.Xresources">Xresources</a> 
 
 ## Other 
-- A VsCode port has been made for UwU, do check it out <a href="https://github.com/Mangeshrex/uwu-vscode-theme>herw</a> 
+- A VsCode port has been made for UwU, do check it out [here](https://github.com/Mangeshrex/uwu-vscode-theme).
 
 ## TO-DO 
-- [ ] Adding some famous statusline support. 
-- [•] Beautifying the colors more. 
+[ ] Adding some famous statusline support. 
+
+[•] Beautifying the colors more. 
 
 ## Contributing
 At this moment UwU colorscheme is at its beginning and needs to be ported to most of the programs used in day to day life. So, if anyone of you feels you can port it to your favourite programs then PR's heartily welcomed.  
