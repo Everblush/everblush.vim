@@ -39,6 +39,13 @@ let g:UwuNR=1
 <img src="https://raw.githubusercontent.com/Mangeshrex/uwu.vim/main/assets/uwu.png" alt="uwu-ss">
 </p>
 
+- With NvChad. 
+<p align="center">
+<img src="https://raw.githubusercontent.com/Mangeshrex/uwu.vim/main/assets/uwu-nvim.png" alt"uwu nvim"> 
+</p> 
+
+<h4>SS credits to <a href="https://github.com/Manas140>Manas140</a></h4> 
+
 ## Hex Colors Codes
 | Color          | Hex Code |
 | :------------  | :------: |
