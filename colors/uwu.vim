@@ -49,17 +49,19 @@ if g:UwuNR == 0
     let s:UwuNR_fg = s:uwu0_gui
 endif
 
-
 "Syntax Highlighting
 exe "hi CursorLineNR guifg=" .s:UwuNR_fg
 exe "hi CursorLine guibg=" .s:uwu0_gui
+
 exe "hi ErrorMsg guifg=" .s:uwu1_gui." guibg=".s:uwu8_gui
 exe "hi WarningMsg guifg=" .s:uwu0_gui
+
 exe "hi PreProc guifg=" .s:uwu4_gui
 exe "hi Exception guifg=" .s:uwu7_gui
 exe "hi Error guifg=" .s:uwu1_gui
 exe "hi Type guifg=" .s:uwu3_gui
 exe "hi Identifier guifg=" .s:uwu1_gui
+
 exe "hi Constant guifg=" .s:uwu3_gui
 exe "hi Repeat guifg=" .s:uwu5_gui
 exe "hi Keyword guifg=" .s:uwu5_gui
@@ -73,7 +75,7 @@ exe "hi Todo guifg=" .s:uwu5_gui
 exe "hi Special guifg=" .s:uwu4_gui
 exe "hi Label guifg=" .s:uwu12_gui
 exe "hi Delimiter guifg=" .s:uwu7_gui
-exe "hi Number guifg=" .s:uwu8_gui
+exe "hi Number guifg=" .s:uwu6_gui
 exe "hi Define guifg=" .s:uwu6_gui
 exe "hi MoreMsg guifg=" .s:uwu14_gui
 exe "hi Tag guifg=" .s:uwu15_gui
@@ -94,7 +96,7 @@ exe "hi SignColumn guibg=" .s:uwu0_gui
 exe "hi Title guifg=" .s:uwu3_gui
 exe "hi LineNr guifg=".s:uwu8_gui
 exe "hi NonText guifg=".s:uwu5_gui." guibg=".s:uwu0_gui
-exe "hi Comment guifg=".s:uwu8_gui
+exe "hi Comment guifg=".s:uwu8_gui "gui=italic" 
 exe "hi SpecialComment guifg=".s:uwu8_gui "gui=italic guibg=NONE "
 exe "hi TabLineFill gui=NONE guibg=".s:uwu8_gui
 exe "hi TabLine guifg=".s:uwu7_gui." guibg=".s:uwu8_gui
@@ -124,13 +126,6 @@ exe "hi GitGutterChange guifg=".s:uwu1_gui
 exe "hi GitGutterDelete guifg=".s:uwu3_gui
 exe "hi GitGutterChangeDelete guifg=".s:uwu4_gui
 exe "hi GitGutterLineHighlightsEnable guifg=".s:uwu9_gui." guibg=".s:uwu8_gui
-
-
-"+-+-+-+-+-+-+-+-+-+-+
-"+ Git Highlighting  +
-"+-+-+-+-+-+-+-+-+-+-+
-
-
 
 " Nvim-Treesitter Highlights
 exe "hi TSAttribute guifg=".s:uwu4_gui
