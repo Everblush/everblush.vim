@@ -34,8 +34,8 @@ window:
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   padding:
-    x: 0
-    y: 0
+    x: 10  
+    y: 10
 
   # Spread additional padding evenly around the terminal content.
   dynamic_padding: true 
@@ -109,7 +109,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Iosevka Nerd Font
+    family: CaskaydiaCove Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
@@ -120,7 +120,7 @@ font:
     # family: Mononoki Nerd Font
 
     # The `style` can be specified to pick a specific face.
-    style: Regular
+    style: Bold 
 
   # Bold font face
   bold:
@@ -128,7 +128,7 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Iosevka Nerd Font 
+    family: CaskaydiaCove Nerd Font  
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
@@ -139,7 +139,7 @@ font:
     # family: Mononoki Nerd Font
 
     # The `style` can be specified to pick a specific face.
-    style: Bold
+    style: Book
 
   # Italic font face
   italic:
@@ -147,7 +147,7 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Iosevka Nerd Font  
+    family: CaskaydiaCove Nerd Font  
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
@@ -222,7 +222,7 @@ colors:
   # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
     text: '0xd6d6d6'
-    cursor: '0x232a2c'
+    cursor: '0x3b4244'
 
   # Normal colors
   normal:
@@ -299,8 +299,8 @@ colors:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 1.0
-# background_opacity: 0.80
+window.opacity: 1.0
+# _opacity: 0.80
 
 #selection:
   #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
