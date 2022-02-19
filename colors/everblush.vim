@@ -47,243 +47,243 @@ if !exists("g:everblushNR")
 endif
 
 if g:everblushNR == 0
-    let s:everblushNR_fg = everblblush0_gui
+    let s:everblushNR_fg = .s:everblush0_gui
 endif
 
 "Syntax Highlighting
-exe "hi CursorLineNR guifg=" .everblushNR_fg
-exe "hi CursorLine guibg=" .everblush0_gui
+exe "hi CursorLineNR guifg=" s:everblushNR_fg
+exe "hi CursorLine guibg=" s:everblush0_gui
 
-exe "hi ErrorMsg guifg=" .everblush1_gui." guibg=".everblush8_gui
-exe "hi WarningMsg guifg=" .everblush0_gui
+exe "hi ErrorMsg guifg=" s:everblush1_gui." guibg="s:everblush8_gui
+exe "hi WarningMsg guifg=" s:everblush0_gui
 
-exe "hi PreProc guifg=" .everblush4_gui
-exe "hi Exception guifg=" .everblush7_gui
-exe "hi Error guifg=" .everblush1_gui
-exe "hi Type guifg=" .everblush3_gui
-exe "hi Identifier guifg=" .everblush1_gui
+exe "hi PreProc guifg=" s:everblush4_gui
+exe "hi Exception guifg=" s:everblush7_gui
+exe "hi Error guifg=" s:everblush1_gui
+exe "hi Type guifg=" s:everblush3_gui
+exe "hi Identifier guifg=" s:everblush1_gui
 
-exe "hi Constant guifg=" .everblush3_gui
-exe "hi Repeat guifg=" .everblush5_gui
-exe "hi Keyword guifg=" .everblush5_gui
-exe "hi IncSearch guifg=" .everblush3_gui
-exe "hi Title guifg=" .everblush2_gui
-exe "hi PreCondit guifg=" .everblush5_gui
-exe "hi Debug guifg=" .everblush13_gui
-exe "hi SpecialChar guifg=" .everblush4_gui
-exe "hi Conditional guifg=" .everblush1_gui
-exe "hi Todo guifg=" .everblush5_gui
-exe "hi Special guifg=" .everblush4_gui
-exe "hi Label guifg=" .everblush12_gui
-exe "hi Delimiter guifg=" .everblush7_gui
-exe "hi Number guifg=" .everblush6_gui
-exe "hi Define guifg=" .everblush6_gui
-exe "hi MoreMsg guifg=" .everblush14_gui
-exe "hi Tag guifg=" .everblush15_gui
-exe "hi String guifg=" .everblush2_gui
-exe "hi MatchParen guifg=" .everblush1_gui
-exe "hi Macro guifg=" .everblush5_gui
-exe "hi Function guifg=" .everblush4_gui
-exe "hi Directory guifg=" .everblush4_gui
-exe "hi markdownLinkText guifg=" .everblush9_gui
-exe "hi Include guifg=" .everblush1_gui
-exe "hi Storage guifg=" .everblush9_gui
-exe "hi Statement guifg=" .everblush3_gui
-exe "hi Operator guifg=" .everblush4_gui
-exe "hi ColorColumn guibg=" .everblush8_gui
-exe "hi PMenu guifg=".everblush7_gui." guibg=" .everblush0_gui
-exe "hi PMenuSel guifg=".everblush8_gui." guibg=".everblush5_gui
-exe "hi SignColumn guibg=" .everblush0_gui
-exe "hi Title guifg=" .everblush3_gui
-exe "hi LineNr guifg=".everblush8_gui
-exe "hi NonText guifg=".everblush5_gui." guibg=".everblush0_gui
-exe "hi Comment guifg=".everblush8_gui "gui=italic" 
-exe "hi SpecialComment guifg=".everblush8_gui "gui=italic guibg=NONE "
-exe "hi TabLineFill gui=NONE guibg=".everblush8_gui
-exe "hi TabLine guifg=".everblush7_gui." guibg=".everblush8_gui
-exe "hi StatusLine guibg=".everblushbg_gui." guifg=".everblushfg_gui
-exe "hi StatusLineNC guibg=".everblushbg_gui." guifg=".everblushfg_gui
-exe "hi Search guibg=".everblush8_gui." guifg=".everblush4_gui
-exe "hi VertSplit gui=NONE guifg=".everblush0_gui." guibg=".everblush0_gui
-exe "hi Visual gui=NONE guibg=".everblush0_gui
-exe "hi Underlined guifg=".everblush3_gui
+exe "hi Constant guifg=" s:everblush3_gui
+exe "hi Repeat guifg=" s:everblush5_gui
+exe "hi Keyword guifg=" s:everblush5_gui
+exe "hi IncSearch guifg=" s:everblush3_gui
+exe "hi Title guifg=" s:everblush2_gui
+exe "hi PreCondit guifg=" s:everblush5_gui
+exe "hi Debug guifg=" s:everblush13_gui
+exe "hi SpecialChar guifg=" s:everblush4_gui
+exe "hi Conditional guifg=" s:everblush1_gui
+exe "hi Todo guifg=" s:everblush5_gui
+exe "hi Special guifg=" s:everblush4_gui
+exe "hi Label guifg=" s:everblush12_gui
+exe "hi Delimiter guifg=" s:everblush7_gui
+exe "hi Number guifg=" s:everblush6_gui
+exe "hi Define guifg=" s:everblush6_gui
+exe "hi MoreMsg guifg=" s:everblush14_gui
+exe "hi Tag guifg=" s:everblush15_gui
+exe "hi String guifg=" s:everblush2_gui
+exe "hi MatchParen guifg=" s:everblush1_gui
+exe "hi Macro guifg=" s:everblush5_gui
+exe "hi Function guifg=" s:everblush4_gui
+exe "hi Directory guifg=" s:everblush4_gui
+exe "hi markdownLinkText guifg=" s:everblush9_gui
+exe "hi Include guifg=" s:everblush1_gui
+exe "hi Storage guifg=" s:everblush9_gui
+exe "hi Statement guifg=" s:everblush3_gui
+exe "hi Operator guifg=" s:everblush4_gui
+exe "hi ColorColumn guibg=" s:everblush8_gui
+exe "hi PMenu guifg="s:everblush7_gui." guibg=" s:everblush0_gui
+exe "hi PMenuSel guifg="s:everblush8_gui." guibg="s:everblush5_gui
+exe "hi SignColumn guibg=" s:everblush0_gui
+exe "hi Title guifg=" s:everblush3_gui
+exe "hi LineNr guifg="s:everblush8_gui
+exe "hi NonText guifg="s:everblush5_gui." guibg="s:everblush0_gui
+exe "hi Comment guifg="s:everblush8_gui "gui=italic" 
+exe "hi SpecialComment guifg="s:everblush8_gui "gui=italic guibg=NONE "
+exe "hi TabLineFill gui=NONE guibg="s:everblush8_gui
+exe "hi TabLine guifg="s:everblush7_gui." guibg="s:everblush8_gui
+exe "hi StatusLine guibg="s:everblushbg_gui." guifg="s:everblushfg_gui
+exe "hi StatusLineNC guibg="s:everblushbg_gui." guifg="s:everblushfg_gui
+exe "hi Search guibg="s:everblush8_gui." guifg="s:everblush4_gui
+exe "hi VertSplit gui=NONE guifg="s:everblush0_gui." guibg="s:everblush0_gui
+exe "hi Visual gui=NONE guibg="s:everblush0_gui
+exe "hi Underlined guifg="s:everblush3_gui
 exe "hi EndOfBuffer guibg=NONE"
 
 " Spell Highlightings
-exe "hi SpellBad guifg=".everblush1_gui
-exe "hi SpellCap guifg=".everblush1_gui." guibg=".everblush8_gui
-exe "hi SpellLocal guifg=".everblush4_gui
-exe "hi SpellRare guifg=".everblush5_gui
+exe "hi SpellBad guifg="s:everblush1_gui
+exe "hi SpellCap guifg="s:everblush1_gui." guibg="s:everblush8_gui
+exe "hi SpellLocal guifg="s:everblush4_gui
+exe "hi SpellRare guifg="s:everblush5_gui
 
 " Diff Highlightings
-exe "hi DiffAdd guifg=".everblush2_gui." guibg=".everblushbg_gui
-exe "hi DiffChange guifg=".everblush5_gui." guibg=".everblushbg_gui
-exe "hi DiffDelete guifg=".everblush6_gui." guibg=".everblushbg_gui
-exe "hi DiffText guifg=".everblush1_gui." guibg=".everblushbg_gui
+exe "hi DiffAdd guifg="s:everblush2_gui." guibg="s:everblushbg_gui
+exe "hi DiffChange guifg="s:everblush5_gui." guibg="s:everblushbg_gui
+exe "hi DiffDelete guifg="s:everblush6_gui." guibg="s:everblushbg_gui
+exe "hi DiffText guifg="s:everblush1_gui." guibg="s:everblushbg_gui
 
 " GitGutter Highlightings
-exe "hi GitGutterAdd guifg=".everblush3_gui
-exe "hi GitGutterChange guifg=".everblush1_gui
-exe "hi GitGutterDelete guifg=".everblush3_gui
-exe "hi GitGutterChangeDelete guifg=".everblush4_gui
-exe "hi GitGutterLineHighlightsEnable guifg=".everblush9_gui." guibg=".everblush8_gui
+exe "hi GitGutterAdd guifg="s:everblush3_gui
+exe "hi GitGutterChange guifg="s:everblush1_gui
+exe "hi GitGutterDelete guifg="s:everblush3_gui
+exe "hi GitGutterChangeDelete guifg="s:everblush4_gui
+exe "hi GitGutterLineHighlightsEnable guifg="s:everblush9_gui." guibg="s:everblush8_gui
 
 " Nvim-Treesitter Highlights
-exe "hi TSAttribute guifg=".everblush4_gui
-exe "hi TSBoolean guifg=".everblush6_gui
-exe "hi TSCharacter guifg=".everblush4_gui
-exe "hi TSComment guifg=".everblush8_gui
-exe "hi TSConditional guifg=".everblush1_gui
-exe "hi TSConstant guifg=".everblush6_gui
-exe "hi TSConstBuiltin guifg=".everblush4_gui
-exe "hi TSConstMacro guifg=".everblush3_gui
-exe "hi TSConstructor guifg=".everblush4_gui
-exe "hi TSException guifg=".everblush8_gui
-exe "hi TSField guifg=".everblush1_gui
-exe "hi TSFloat guifg=".everblush8_gui
-exe "hi TSFunction guifg=".everblush1_gui
-exe "hi TSFuncBuiltin guifg=".everblush14_gui
-exe "hi TSFuncMacro guifg=".everblush2_gui
-exe "hi TSInclude guifg=".everblush9_gui
-exe "hi TSKeyword guifg=".everblush5_gui
-exe "hi TSKeywordFunction guifg=".everblush4_gui
-exe "hi TsKeywordOperator guifg=".everblush12_gui
-exe "hi TSKeywordReturn guifg=".everblush4_gui
-exe "hi TSLabel guifg=".everblush4_gui
-exe "hi TSMethod guifg=".everblush12_gui
-exe "hi TSNamespace guifg=".everblush9_gui
-exe "hi TSNumber guifg=".everblush3_gui
-exe "hi TSParameter guifg=".everblush1_gui
-exe "hi TSParameterReference guifg=".everblush9_gui
-exe "hi TSProperty guifg=".everblush1_gui
-exe "hi TSPunctDelimiter guifg=".everblush7_gui
-exe "hi TSPunctBracket guifg=".everblush7_gui
-exe "hi TSPunctSpecial guifg=".everblush7_gui
-exe "hi TSRepeat guifg=".everblush11_gui
-exe "hi TSString guifg=".everblush2_gui
-exe "hi TSStringRegex guifg=".everblush2_gui
-exe "hi TSStringEscape guifg=".everblush4_gui
-exe "hi TSStringSpecial guifg=".everblush4_gui
-exe "hi TSSymbol guifg=".everblush1_gui
-exe "hi TSTag guifg=".everblush4_gui
-exe "hi TSTagAttribute guifg=".everblush1_gui
-exe "hi TSTagDelimiter guifg=".everblush7_gui
-exe "hi TSText guifg=".everblush7_gui
-exe "hi TSStrong guifg=".everblush7_gui
-exe "hi TSEmphasis gui=italic guifg=".everblush7_gui
-exe "hi TSUnderline guifg=".everblush5_gui
-exe "hi TSStrike guifg=".everblush7_gui
-exe "hi TSTitle guifg=".everblush3_gui
-exe "hi TSLiteral guifg=".everblush2_gui
-exe "hi TSURI guifg=".everblush3_gui
-exe "hi TSMath guifg=".everblush6_gui
-exe "hi TSTextReference guifg=".everblush6_gui
-exe "hi TSEnvirontment guifg=".everblush5_gui
-exe "hi TSEnvironmentName guifg=".everblush3_gui
-exe "hi TSNote guifg=".everblush8_gui
-exe "hi TSWarning guifg=".everblush0_gui." guibg=".everblush1_gui
-exe "hi TSDanger guifg=".everblush8_gui
-exe "hi TSType guifg=".everblush3_gui
-exe "hi TSTypeBuiltin guifg=".everblush3_gui
-exe "hi TSVariable guifg=".everblush4_gui
-exe "hi TSVariableBuiltin guifg=".everblush4_gui
+exe "hi TSAttribute guifg="s:everblush4_gui
+exe "hi TSBoolean guifg="s:everblush6_gui
+exe "hi TSCharacter guifg="s:everblush4_gui
+exe "hi TSComment guifg="s:everblush8_gui
+exe "hi TSConditional guifg="s:everblush1_gui
+exe "hi TSConstant guifg="s:everblush6_gui
+exe "hi TSConstBuiltin guifg="s:everblush4_gui
+exe "hi TSConstMacro guifg="s:everblush3_gui
+exe "hi TSConstructor guifg="s:everblush4_gui
+exe "hi TSException guifg="s:everblush8_gui
+exe "hi TSField guifg="s:everblush1_gui
+exe "hi TSFloat guifg="s:everblush8_gui
+exe "hi TSFunction guifg="s:everblush1_gui
+exe "hi TSFuncBuiltin guifg="s:everblush14_gui
+exe "hi TSFuncMacro guifg="s:everblush2_gui
+exe "hi TSInclude guifg="s:everblush9_gui
+exe "hi TSKeyword guifg="s:everblush5_gui
+exe "hi TSKeywordFunction guifg="s:everblush4_gui
+exe "hi TsKeywordOperator guifg="s:everblush12_gui
+exe "hi TSKeywordReturn guifg="s:everblush4_gui
+exe "hi TSLabel guifg="s:everblush4_gui
+exe "hi TSMethod guifg="s:everblush12_gui
+exe "hi TSNamespace guifg="s:everblush9_gui
+exe "hi TSNumber guifg="s:everblush3_gui
+exe "hi TSParameter guifg="s:everblush1_gui
+exe "hi TSParameterReference guifg="s:everblush9_gui
+exe "hi TSProperty guifg="s:everblush1_gui
+exe "hi TSPunctDelimiter guifg="s:everblush7_gui
+exe "hi TSPunctBracket guifg="s:everblush7_gui
+exe "hi TSPunctSpecial guifg="s:everblush7_gui
+exe "hi TSRepeat guifg="s:everblush11_gui
+exe "hi TSString guifg="s:everblush2_gui
+exe "hi TSStringRegex guifg="s:everblush2_gui
+exe "hi TSStringEscape guifg="s:everblush4_gui
+exe "hi TSStringSpecial guifg="s:everblush4_gui
+exe "hi TSSymbol guifg="s:everblush1_gui
+exe "hi TSTag guifg="s:everblush4_gui
+exe "hi TSTagAttribute guifg="s:everblush1_gui
+exe "hi TSTagDelimiter guifg="s:everblush7_gui
+exe "hi TSText guifg="s:everblush7_gui
+exe "hi TSStrong guifg="s:everblush7_gui
+exe "hi TSEmphasis gui=italic guifg="s:everblush7_gui
+exe "hi TSUnderline guifg="s:everblush5_gui
+exe "hi TSStrike guifg="s:everblush7_gui
+exe "hi TSTitle guifg="s:everblush3_gui
+exe "hi TSLiteral guifg="s:everblush2_gui
+exe "hi TSURI guifg="s:everblush3_gui
+exe "hi TSMath guifg="s:everblush6_gui
+exe "hi TSTextReference guifg="s:everblush6_gui
+exe "hi TSEnvirontment guifg="s:everblush5_gui
+exe "hi TSEnvironmentName guifg="s:everblush3_gui
+exe "hi TSNote guifg="s:everblush8_gui
+exe "hi TSWarning guifg="s:everblush0_gui." guibg="s:everblush1_gui
+exe "hi TSDanger guifg="s:everblush8_gui
+exe "hi TSType guifg="s:everblush3_gui
+exe "hi TSTypeBuiltin guifg="s:everblush3_gui
+exe "hi TSVariable guifg="s:everblush4_gui
+exe "hi TSVariableBuiltin guifg="s:everblush4_gui
 
 " C Language Higlights
-exe "hi cConstant guifg=".everblush4_gui
-exe "hi cCppBracket guifg=".everblush7_gui
-exe "hi cCppInElse guifg=".everblush7_gui
-exe "hi cCppInElse2 guifg=".everblush7_gui
-exe "hi cCppInIf guifg=".everblush4_gui
-exe "hi cCppInSkip guifg=".everblush7_gui
-exe "hi cCppInWapper guifg=".everblush5_gui
-exe "hi cCppOutElse guifg=".everblush7_gui
-exe "hi cCppOutIf guifg=".everblush8_gui
-exe "hi cCppOutIf2 guifg=".everblush8_gui
-exe "hi cCppOutInGroup guifg=".everblush8_gui
-exe "hi cCppOutSkip guifg=".everblush8_gui
-exe "hi cCppOutWrapper guifg=".everblush5_gui
-exe "hi cCppParen guifg=".everblush7_gui
-exe "hi cCppString guifg=".everblush2_gui
-exe "hi cCurlyError guifg=".everblush7_gui." guibg=".everblush9_gui
-exe "hi cErrInBracket guifg=".everblush7_gui." guibg=".everblush9_gui
-exe "hi cErrInParen guifg=".everblush7_gui." guibg=".everblush9_gui
-exe "hi cFloat guifg=".everblush8_gui
-exe "hi cFormat guifg=".everblush4_gui
-exe "hi cMutli guifg=".everblush3_gui
-exe "hi cOperator guifg=".everblush4_gui
-exe "hi cParen guifg=".everblush3_gui
-exe "hi cParenError guifg=".everblush7_gui." guibg=".everblush9_gui
-exe "hi PreProcGroup guifg=".everblush4_gui
-exe "hi cSpaceError guifg=".everblush1_gui
-exe "hi cSpecial guifg=".everblush4_gui
-exe "hi cSpecialCharacter guifg=".everblush4_gui
-exe "hi cStatement guifg=".everblush5_gui
-exe "hi cStorageClass guifg=".everblush3_gui
-exe "hi cString guifg=".everblush2_gui
-exe "hi cType guifg=".everblush3_gui
-exe "hi cUserCont guifg=".everblush7_gui
+exe "hi cConstant guifg="s:everblush4_gui
+exe "hi cCppBracket guifg="s:everblush7_gui
+exe "hi cCppInElse guifg="s:everblush7_gui
+exe "hi cCppInElse2 guifg="s:everblush7_gui
+exe "hi cCppInIf guifg="s:everblush4_gui
+exe "hi cCppInSkip guifg="s:everblush7_gui
+exe "hi cCppInWapper guifg="s:everblush5_gui
+exe "hi cCppOutElse guifg="s:everblush7_gui
+exe "hi cCppOutIf guifg="s:everblush8_gui
+exe "hi cCppOutIf2 guifg="s:everblush8_gui
+exe "hi cCppOutInGroup guifg="s:everblush8_gui
+exe "hi cCppOutSkip guifg="s:everblush8_gui
+exe "hi cCppOutWrapper guifg="s:everblush5_gui
+exe "hi cCppParen guifg="s:everblush7_gui
+exe "hi cCppString guifg="s:everblush2_gui
+exe "hi cCurlyError guifg="s:everblush7_gui." guibg="s:everblush9_gui
+exe "hi cErrInBracket guifg="s:everblush7_gui." guibg="s:everblush9_gui
+exe "hi cErrInParen guifg="s:everblush7_gui." guibg="s:everblush9_gui
+exe "hi cFloat guifg="s:everblush8_gui
+exe "hi cFormat guifg="s:everblush4_gui
+exe "hi cMutli guifg="s:everblush3_gui
+exe "hi cOperator guifg="s:everblush4_gui
+exe "hi cParen guifg="s:everblush3_gui
+exe "hi cParenError guifg="s:everblush7_gui." guibg="s:everblush9_gui
+exe "hi PreProcGroup guifg="s:everblush4_gui
+exe "hi cSpaceError guifg="s:everblush1_gui
+exe "hi cSpecial guifg="s:everblush4_gui
+exe "hi cSpecialCharacter guifg="s:everblush4_gui
+exe "hi cStatement guifg="s:everblush5_gui
+exe "hi cStorageClass guifg="s:everblush3_gui
+exe "hi cString guifg="s:everblush2_gui
+exe "hi cType guifg="s:everblush3_gui
+exe "hi cUserCont guifg="s:everblush7_gui
 
 " GoLang Highlight Groups
-exe "hi goBlock guifg=".everblush7_gui
-exe "hi goBuiltins guifg=".everblush13_gui
-exe "hi goCharacter guifg=".everblush1_gui
-exe "hi goComment guifg=".everblush8_gui
-exe "hi goComplexes guifg=".everblush3_gui
-exe "hi goConditional guifg=".everblush5_gui
-exe "hi goConstants guifg=".everblush5_gui
-exe "hi goDecimalInt  guifg=".everblush3_gui
-exe "hi goDeclType guifg=".everblush13_gui
-exe "hi goDeclaration guifg=".everblush5_gui
-exe "hi goDirective guifg=".everblush1_gui
-exe "hi goEscapeC guifg=".everblush4_gui
-exe "hi goEscapeBigU guifg=".everblush4_gui
-exe "hi goEscapeError guifg=".everblush0_gui." guibg=".everblush1_gui
-exe "hi goEscapeOctal guifg=".everblush4_gui
-exe "hi goEscapeU guifg=".everblush4_gui
-exe "hi goEscapeX guifg=".everblush4_gui
-exe "hi goExtraType guifg=".everblush3_gui
-exe "hi goFloat guifg=".everblush11_gui
-exe "hi goFloats guifg=".everblush12_gui
-exe "hi goHexadecimalInt guifg=".everblush3_gui
-exe "hi goImaginary guifg=".everblush3_gui
-exe "hi goLabel guifg=".everblush3_gui
-exe "hi goOctalError guifg=".everblush1_gui
-exe "hi goOctalInt guifg=".everblush11_gui
-exe "hi goParen guifg=".everblush7_gui
-exe "hi goRawString guifg=".everblush10_gui
-exe "hi goRepeat guifg=".everblush3_gui
-exe "hi goSignedInts guifg=".everblush11_gui
-exe "hi goSpaceError guifg=".everblush0_gui." guibg=".everblush1_gui
-exe "hi goSpecialString guifg=".everblush12_gui
-exe "hi goStatement guifg=".everblush1_gui
-exe "hi goString guifg=".everblush10_gui
-exe "hi goTSComment guifg=".everblush8_gui
-exe "hi goTSFunction guifg=".everblush4_gui
-exe "hi goTSInclude guifg=".everblush4_gui
-exe "hi goTSkeyword guifg=".everblush5_gui
-exe "hi goTSKeywordFunction guifg=".everblush5_gui
-exe "hi goTSMethod guifg=".everblush4_gui
-exe "hi goTSNumber guifg=".everblush8_gui
-exe "hi goTSOperator guifg=".everblush12_gui
-exe "hi goTSProperty guifg=".everblush1_gui
-exe "hi goTSPunctBracket guifg=".everblush6_gui
-exe "hi goTSPunctDelimiter guifg=".everblush13_gui
-exe "hi goTSRepeat guifg=".everblush3_gui
-exe "hi goTSString guifg=".everblush10_gui
-exe "hi goTSType guifg=".everblush3_gui
-exe "hi goTSTypeBuiltin guifg=".everblush3_gui
-exe "hi goTSVariable guifg=".everblush5_gui
-exe "hi goTodo guifg=".everblush3_gui
-exe "hi goType guifg=".everblush3_gui
+exe "hi goBlock guifg="s:everblush7_gui
+exe "hi goBuiltins guifg="s:everblush13_gui
+exe "hi goCharacter guifg="s:everblush1_gui
+exe "hi goComment guifg="s:everblush8_gui
+exe "hi goComplexes guifg="s:everblush3_gui
+exe "hi goConditional guifg="s:everblush5_gui
+exe "hi goConstants guifg="s:everblush5_gui
+exe "hi goDecimalInt  guifg="s:everblush3_gui
+exe "hi goDeclType guifg="s:everblush13_gui
+exe "hi goDeclaration guifg="s:everblush5_gui
+exe "hi goDirective guifg="s:everblush1_gui
+exe "hi goEscapeC guifg="s:everblush4_gui
+exe "hi goEscapeBigU guifg="s:everblush4_gui
+exe "hi goEscapeError guifg="s:everblush0_gui." guibg="s:everblush1_gui
+exe "hi goEscapeOctal guifg="s:everblush4_gui
+exe "hi goEscapeU guifg="s:everblush4_gui
+exe "hi goEscapeX guifg="s:everblush4_gui
+exe "hi goExtraType guifg="s:everblush3_gui
+exe "hi goFloat guifg="s:everblush11_gui
+exe "hi goFloats guifg="s:everblush12_gui
+exe "hi goHexadecimalInt guifg="s:everblush3_gui
+exe "hi goImaginary guifg="s:everblush3_gui
+exe "hi goLabel guifg="s:everblush3_gui
+exe "hi goOctalError guifg="s:everblush1_gui
+exe "hi goOctalInt guifg="s:everblush11_gui
+exe "hi goParen guifg="s:everblush7_gui
+exe "hi goRawString guifg="s:everblush10_gui
+exe "hi goRepeat guifg="s:everblush3_gui
+exe "hi goSignedInts guifg="s:everblush11_gui
+exe "hi goSpaceError guifg="s:everblush0_gui." guibg="s:everblush1_gui
+exe "hi goSpecialString guifg="s:everblush12_gui
+exe "hi goStatement guifg="s:everblush1_gui
+exe "hi goString guifg="s:everblush10_gui
+exe "hi goTSComment guifg="s:everblush8_gui
+exe "hi goTSFunction guifg="s:everblush4_gui
+exe "hi goTSInclude guifg="s:everblush4_gui
+exe "hi goTSkeyword guifg="s:everblush5_gui
+exe "hi goTSKeywordFunction guifg="s:everblush5_gui
+exe "hi goTSMethod guifg="s:everblush4_gui
+exe "hi goTSNumber guifg="s:everblush8_gui
+exe "hi goTSOperator guifg="s:everblush12_gui
+exe "hi goTSProperty guifg="s:everblush1_gui
+exe "hi goTSPunctBracket guifg="s:everblush6_gui
+exe "hi goTSPunctDelimiter guifg="s:everblush13_gui
+exe "hi goTSRepeat guifg="s:everblush3_gui
+exe "hi goTSString guifg="s:everblush10_gui
+exe "hi goTSType guifg="s:everblush3_gui
+exe "hi goTSTypeBuiltin guifg="s:everblush3_gui
+exe "hi goTSVariable guifg="s:everblush5_gui
+exe "hi goTodo guifg="s:everblush3_gui
+exe "hi goType guifg="s:everblush3_gui
 
 " NvimTree Highlights
-exe "hi NvimTreeFolderIcon guifg=".everblush3_gui
-exe "hi NvimTreeFoldername guifg=".everblushfg_gui
-exe "hi NvimTreeOpenedFolderName guifg=".everblush4_gui
-exe "hi NvimTreeEmptyFolderName guifg=".everblush4_gui
-exe "hi NvimTreeFileDirty guifg=".everblush1_gui
-exe "hi NvimTreeExecFile guifg=".everblushfg_gui
-exe "hi NvimTreeGitDirty guifg=".everblush1_gui
-exe "hi NvimTreeGitDeleted guifg=".everblush1_gui
-exe "hi NvimTreeRootFolder guifg=".everblush5_gui
-exe "hi NvimTreeIndentMarker guifg=".everblush0_gui
+exe "hi NvimTreeFolderIcon guifg="s:everblush3_gui
+exe "hi NvimTreeFoldername guifg="s:everblushfg_gui
+exe "hi NvimTreeOpenedFolderName guifg="s:everblush4_gui
+exe "hi NvimTreeEmptyFolderName guifg="s:everblush4_gui
+exe "hi NvimTreeFileDirty guifg="s:everblush1_gui
+exe "hi NvimTreeExecFile guifg="s:everblushfg_gui
+exe "hi NvimTreeGitDirty guifg="s:everblush1_gui
+exe "hi NvimTreeGitDeleted guifg="s:everblush1_gui
+exe "hi NvimTreeRootFolder guifg="s:everblush5_gui
+exe "hi NvimTreeIndentMarker guifg="s:everblush0_gui
