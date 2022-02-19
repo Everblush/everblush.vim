@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://raw.githubusercontent.com/Mangeshrex/uwu.vim/main/assets/pallette.png" alt="uwu">
+   <img src="https://raw.githubusercontent.com/Mangeshrex/uwu.vim/main/assets/pallette.png" alt="uwu">
 <h3> A beautiful and dark vim/neovim colorscheme.</h3>
 </div>
 
