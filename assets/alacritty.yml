@@ -34,7 +34,7 @@ window:
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   padding:
-    x: 10  
+    x: 10 
     y: 10
 
   # Spread additional padding evenly around the terminal content.
@@ -216,8 +216,8 @@ draw_bold_text_with_bright_colors: true
 colors:
   # Default colors
   primary:
-    background: '0x131A1C'
-    foreground: '0xC5C8C9'
+    background: '0x181f21'
+    foreground: '0xdadada'
 
   # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
@@ -226,26 +226,28 @@ colors:
 
   # Normal colors
   normal:
-    black:   '0x1b2224'
-    red:     '0xf65b5b'
-    green:   '0x6bb05d'
-    yellow:  '0xe59e67'
-    blue:    '0x53A7BF'
-    magenta: '0xbb8fe5'
-    cyan:    '0x51a39f'
-    white:   '0xc4c4c4'
+    black:   '0x22292b'
+    red:     '0xe06e6e'
+    green:   '0x8ccf7e'
+    yellow:  '0xe5c76b'
+    blue:    '0x67b0e8'
+    magenta: '0xc47fd5'
+    cyan:    '0x6da4cd'
+    white:   '0xb3b9b8'
 
   # Bright colors
   bright:
-    black:   '0x232a2c'
-    red:     '0xc26f6f'
-    green:   '0x8dc776'
-    yellow:  '0xe7ac7e'
-    blue:    '0x6CBAD1'
-    magenta: '0xb185db'
-    cyan:    '0x6db0ad'
-    white:   '0xcecece'
+    black:   '0x3b4244'
+    red:     '0xef7d7d'
+    green:   '0x9bdead'
+    yellow:  '0xf4d67a'
+    blue:    '0x6cb5ed'
+    magenta: '0xce89df'
+    cyan:    '0x67cbe7'
+    white:   '0xbdc3c2'
+
   # Dim colors
+  #
   #
   # If the dim colors are not set, they will be calculated automatically based
   # on the `normal` colors.
