@@ -1,28 +1,29 @@
 <div align="center">
-<img src="https://raw.githubusercontent.com/Mangeshrex/uwu.vim/main/assets/uwu-template.png" alt="uwu">
-<h1> A beautiful and dark vim/neovim colorscheme.</h1>
+<img src="https://raw.githubusercontent.com/Mangeshrex/uwu.vim/main/assets/pallette.png" alt="uwu">
+<h3> A beautiful and dark vim/neovim colorscheme.</h3>
 </div>
 
 <p align="center">
-<img src="https://img.shields.io/github/stars/Mangeshrex/uwu.vim?color=d3869b&labelColor=1b2224&style=for-the-badge"> <img src="https://img.shields.io/github/issues/Mangeshrex/uwu.vim?color=e7ac7e&labelColor=1b2224&style=for-the-badge">
-<img src="https://img.shields.io/static/v1?label=license&message=MIT&color=5b98a9&labelColor=1b2224&style=for-the-badge">
-<img src="https://img.shields.io/github/forks/Mangeshrex/uwu.vim?color=e74c4c&labelColor=1b2224&style=for-the-badge"> <img src="https://img.shields.io/static/v1?label=PR%27s&message=Welcomed&color=51a39f&labelColor=1b2224&style=for-the-badge">
+<img src="https://img.shields.io/github/stars/Mangeshrex/everblush.vim?color=e5c76b&labelColor=22292b&style=for-the-badge"> <img src="https://img.shields.io/github/issues/Mangeshrex/everblush.vim?color=67b0e8&labelColor=22292b&style=for-the-badge">
+<img src="https://img.shields.io/static/v1?label=license&message=MIT&color=8ccf7e&labelColor=22292b&style=for-the-badge">
+<img src="https://img.shields.io/github/forks/Mangeshrex/uwu.vim?color=e74c4c&labelColor=1b2224&style=for-the-badge"> 
 </p>
 
 ## Installation
-### Vim-Plug
-- First install <a href="https://github.com/junegunn/vim-plug">vim-plug</a>.
+
+# Vim-Plug
+- First install <a href="https://github.com/junegunn/vim-plug">vim-plug</a>
 ```vimscript
 Plug 'mangeshrex/everblush.vim'
 ```
 - Add ```colorscheme everblush``` to .vimrc or init.vim.
 
-### PackerNvim
+# PackerNvim
 ```lua
-use { 'mangeshrex/everblush.vim' }`
+use { "mangeshrex/everblush.vim" }`
 ```
 
-### Options
+# Options
 For color highlight:
 ```vimscript
 " To enable
@@ -34,19 +35,18 @@ let g:everblushNR=1
 " Remember to reload colorscheme after changing the variable
 ```
 
-## Screenshot
-<p align="center">
-<img src="https://raw.githubusercontent.com/Mangeshrex/uwu.vim/main/assets/uwu.png" alt="uwu-ss">
-</p>
-
-- With NvChad. 
-<p align="center">
-<img src="https://raw.githubusercontent.com/Mangeshrex/uwu.vim/main/assets/uwu-nvim.png" alt"uwu nvim"> 
+# Preview
+- Bash 
+<p align="center"> 
+  <img src="https://raw/githubusercontent.com/Mangeshrex/everblush.vim/tree/main/assets/everblush-bash.png"> 
 </p> 
 
-- SS credits to <a href="https://github.com/Manas140">Manas140</a> 
+- Lua 
+<p align="center"> 
+  <img src="https://raw.githubusercontent.com/Mangeshrex/everblush.vim/tree/main/assets/everblush-lua.png">
+</p> 
 
-## Hex Colors Codes
+# Hex Colors Codes
 | Color          | Hex Code |
 | :------------  | :------: |
 | Foreground     | #dadada  |
@@ -61,11 +61,11 @@ let g:everblushNR=1
 | White          | #b3b9b8  |
 
 ## Terminal Config
-- <a href="https://github.com/mangeshrex/uwu.vim/tree/main/assets/alacritty.yml">Alacritty</a>
-- <a href="https://github.com/Mangeshrex/uwu.vim/tree/main/assets/kitty.conf">Kitty</a>
-- <a href="https://github.com/Mangeshrex/uwu.vim/tree/main/assets/.Xresources">Xresources</a>
+- <a href="https://github.com/mangeshrex/everblush.vim/tree/main/assets/alacritty.yml">Alacritty</a>
+- <a href="https://github.com/Mangeshrex/everblush.vim/tree/main/assets/kitty.conf">Kitty</a>
+- <a href="https://github.com/Mangeshrex/everblush.vim/tree/main/assets/.Xresources">Xresources</a>
 
 ## TO-DO
-[ ] Adding some famous statusline support.
+[ ] Adding statusline support.
 
 [•] Beautifying the colors more.

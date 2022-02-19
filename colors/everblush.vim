@@ -60,10 +60,10 @@ exe "hi WarningMsg guifg=" s:everblush0_gui
 exe "hi PreProc guifg=" s:everblush4_gui
 exe "hi Exception guifg=" s:everblush7_gui
 exe "hi Error guifg=" s:everblush1_gui
-exe "hi Type guifg=" s:everblush3_gui
+exe "hi Type guifg=" s:everblush4_gui
 exe "hi Identifier guifg=" s:everblush1_gui
 
-exe "hi Constant guifg=" s:everblush3_gui
+exe "hi Constant guifg=" s:everblush4_gui
 exe "hi Repeat guifg=" s:everblush5_gui
 exe "hi Keyword guifg=" s:everblush5_gui
 exe "hi IncSearch guifg=" s:everblush3_gui
@@ -88,7 +88,7 @@ exe "hi Directory guifg=" s:everblush4_gui
 exe "hi markdownLinkText guifg=" s:everblush9_gui
 exe "hi Include guifg=" s:everblush1_gui
 exe "hi Storage guifg=" s:everblush9_gui
-exe "hi Statement guifg=" s:everblush3_gui
+exe "hi Statement guifg=" s:everblush5_gui
 exe "hi Operator guifg=" s:everblush4_gui
 exe "hi ColorColumn guibg=" s:everblush8_gui
 exe "hi PMenu guifg="s:everblush7_gui." guibg=" s:everblush0_gui
@@ -185,7 +185,7 @@ exe "hi TSWarning guifg="s:everblush0_gui." guibg="s:everblush1_gui
 exe "hi TSDanger guifg="s:everblush8_gui
 exe "hi TSType guifg="s:everblush3_gui
 exe "hi TSTypeBuiltin guifg="s:everblush3_gui
-exe "hi TSVariable guifg="s:everblush4_gui
+exe "hi TSVariable guifg="s:everblush7_gui
 exe "hi TSVariableBuiltin guifg="s:everblush4_gui
 
 " C Language Higlights
