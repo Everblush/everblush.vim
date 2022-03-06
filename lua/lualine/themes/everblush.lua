@@ -1,6 +1,17 @@
-local colors = require('colorschemes.everblush').get_palette()
-
 local everblush = {}
+local colors = {
+  fg = '#dadada',
+  bg = '#181f21',
+  black = '#22292b',
+  darkbg = '#151b1d',
+  red = '#e06e6e',
+  green = '#8ccf7e',
+  yellow = '#e5c76b',
+  blue = '#67b0e8',
+  magenta = '#c47fd5',
+  cyan = '#6cd0ca',
+  white = '#b3b9b8',
+}
 
 everblush.normal = {
   a = { bg = colors.magenta, fg = colors.bg },
