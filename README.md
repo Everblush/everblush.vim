@@ -1,5 +1,5 @@
 <div align="center">
-   <img src="https://raw.githubusercontent.com/Mangeshrex/uwu.vim/main/assets/pallette.png" alt="uwu">
+   <img src="https://raw.githubusercontent.com/Everblush/everblush.vim/main/assets/pallette.png" alt="Everblush">
 <h3> A beautiful and dark vim/neovim colorscheme.</h3>
 </div>
 
@@ -14,13 +14,13 @@
 # Vim-Plug
 - First install <a href="https://github.com/junegunn/vim-plug">vim-plug</a>
 ```vimscript
-Plug 'mangeshrex/everblush.vim'
+Plug 'Everblush/everblush.vim'
 ```
 - Add ```colorscheme everblush``` to .vimrc or init.vim.
 
 # PackerNvim
 ```lua
-use { "mangeshrex/everblush.vim" }`
+use { "Everblush/everblush.vim" }`
 ```
 
 # Options
@@ -38,12 +38,12 @@ let g:everblushNR=1
 # Preview
 - Bash 
 <p align="center"> 
-  <img src="https://raw.githubusercontent.com/Mangeshrex/everblush.vim/main/assets/everblush-bash.png"> 
+  <img src="https://raw.githubusercontent.com/Everblush/everblush.vim/main/assets/everblush-bash.png"> 
 </p> 
 
 - Lua 
 <p align="center"> 
-  <img src="https://raw.githubusercontent.com/Mangeshrex/everblush.vim/main/assets/everblush-lua.png">
+  <img src="https://raw.githubusercontent.com/Everblush/everblush.vim/main/assets/everblush-lua.png">
 </p> 
 
 # Hex Colors Codes
@@ -61,9 +61,9 @@ let g:everblushNR=1
 | White          | #b3b9b8  |
 
 ## Terminal Config
-- <a href="https://github.com/mangeshrex/everblush.vim/tree/main/assets/alacritty.yml">Alacritty</a>
-- <a href="https://github.com/Mangeshrex/everblush.vim/tree/main/assets/kitty.conf">Kitty</a>
-- <a href="https://github.com/Mangeshrex/everblush.vim/tree/main/assets/.Xresources">Xresources</a>
+- <a href="https://github.com/Everblush/everblush.vim/tree/main/assets/alacritty.yml">Alacritty</a>
+- <a href="https://github.com/Everblush/everblush.vim/tree/main/assets/kitty.conf">Kitty</a>
+- <a href="https://github.com/Everblush/everblush.vim/tree/main/assets/.Xresources">Xresources</a>
 
 ## TO-DO
 [ ] Adding statusline support.
