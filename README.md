@@ -1,5 +1,5 @@
 <div align="center">
-   <img src="https://raw.githubusercontent.com/Mangeshrex/uwu.vim/main/assets/pallette.png" alt="uwu">
+   <img src="https://raw.githubusercontent.com/Everblush/uwu.vim/main/assets/pallette.png" alt="uwu">
 <h3> A beautiful and dark vim/neovim colorscheme.</h3>
 </div>
 
@@ -61,9 +61,9 @@ let g:everblushNR=1
 | White          | #b3b9b8  |
 
 ## Terminal Config
-- <a href="https://github.com/mangeshrex/everblush.vim/tree/main/assets/alacritty.yml">Alacritty</a>
-- <a href="https://github.com/Mangeshrex/everblush.vim/tree/main/assets/kitty.conf">Kitty</a>
-- <a href="https://github.com/Mangeshrex/everblush.vim/tree/main/assets/.Xresources">Xresources</a>
+- <a href="https://github.com/Everblush/everblush.vim/tree/main/assets/alacritty.yml">Alacritty</a>
+- <a href="https://github.com/Everblush/everblush.vim/tree/main/assets/kitty.conf">Kitty</a>
+- <a href="https://github.com/Everblush/everblush.vim/tree/main/assets/.Xresources">Xresources</a>
 
 ## TO-DO
 [ ] Adding statusline support.
