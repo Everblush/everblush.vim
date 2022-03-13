@@ -38,12 +38,12 @@ let g:everblushNR=1
 # Preview
 - Bash 
 <p align="center"> 
-  <img src="https://raw.githubusercontent.com/Mangeshrex/everblush.vim/main/assets/everblush-bash.png"> 
+  <img src="https://raw.githubusercontent.com/Everblush/everblush.vim/main/assets/everblush-bash.png"> 
 </p> 
 
 - Lua 
 <p align="center"> 
-  <img src="https://raw.githubusercontent.com/Mangeshrex/everblush.vim/main/assets/everblush-lua.png">
+  <img src="https://raw.githubusercontent.com/Everblush/everblush.vim/main/assets/everblush-lua.png">
 </p> 
 
 # Hex Colors Codes
