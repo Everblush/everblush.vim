@@ -64,3 +64,10 @@ EOF
 <p align="center"> 
   <img src="https://raw.githubusercontent.com/Mangeshrex/everblush.vim/main/assets/everblush-lua.png">
 </p> 
+
+# Credits 💝
+<a href="https://github.com/Everblush/everblush.vim/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Everblush/everblush.vim" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
