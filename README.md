@@ -1,7 +1,7 @@
-<h2 align="center">Everblush Rofi Themes</h2>
+<h2 align="center">Everblush Vim/Neovim Theme</h2>
 
 <p>
-<h4 align="center"> <i>Everblush with different rofi configs </i> </h4>
+<h4 align="center"> <i>Vim/Neovim syntax highlighting with Everblush</i> </h4>
 </p> 
 
 <p align="center">
