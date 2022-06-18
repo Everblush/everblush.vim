@@ -104,7 +104,7 @@ exe "hi TabLine guifg="s:everblush7_gui." guibg="s:everblush8_gui
 exe "hi StatusLine guibg="s:everblushbg_gui." guifg="s:everblushfg_gui
 exe "hi StatusLineNC guibg="s:everblushbg_gui." guifg="s:everblushfg_gui
 exe "hi Search guibg="s:everblush8_gui." guifg="s:everblush4_gui
-exe "hi VertSplit gui=NONE guifg="s:everblush0_gui." guibg="s:everblush0_gui
+exe "hi VertSplit gui=NONE guifg="s:everblush8_gui." guibg="s:everblush8_gui
 exe "hi Visual gui=NONE guibg="s:everblush0_gui
 exe "hi Underlined guifg="s:everblush3_gui
 exe "hi EndOfBuffer guibg=NONE"
