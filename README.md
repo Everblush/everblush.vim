@@ -31,7 +31,7 @@ For color highlight:
 let g:everblushNR=1 " default
 
 " To disable
-let g:everblushNR=1
+let g:everblushNR=0
 
 " Remember to reload colorscheme after changing the variable
 ```
