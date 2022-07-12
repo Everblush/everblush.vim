@@ -5,23 +5,23 @@
 " LICENSE: MIT
 
 " Setting up the colors
-let s:everblush0_gui = "#22292b"
-let s:everblush1_gui = "#e06e6e"
-let s:everblush2_gui = "#8ccf7e"
+let s:everblush0_gui = "#232a2d"
+let s:everblush1_gui = "#e57474"
+let s:everblush2_gui = "#75cf72"
 let s:everblush3_gui = "#e5c76b"
 let s:everblush4_gui = "#67b0e8"
 let s:everblush5_gui = "#c47fd5"
-let s:everblush6_gui = "#6cd0ca"
+let s:everblush6_gui = "#6cbfbf"
 let s:everblush7_gui = "#b3b9b8"
 let s:everblush8_gui = "#3b4244"
-let s:everblush9_gui = "#ef7d7d"
-let s:everblush10_gui = "#9bdead"
+let s:everblush9_gui = "#ef7e7e"
+let s:everblush10_gui = "#7fd97c"
 let s:everblush11_gui = "#f4d67a"
-let s:everblush12_gui = "#6cb5ed"
+let s:everblush12_gui = "#71baf2"
 let s:everblush13_gui = "#ce89df"
 let s:everblush14_gui = "#67cbe7"
 let s:everblush15_gui = "#bdc3c2"
-let s:everblushbg_gui = "#181f21"
+let s:everblushbg_gui = "#141b1e"
 let s:everblushfg_gui = "#dadada"
 
 let s:everblushNR_fg = s:everblush7_gui
@@ -31,7 +31,7 @@ syntax reset
 let g:colors_name = "everblush"
 set background=dark
 set t_Co=256
-hi Normal guifg=#DADADA ctermbg=NONE guibg=#181f21 gui=NONE
+hi Normal guifg=#DADADA ctermbg=NONE guibg=#141b1e gui=NONE
 
 set t_Co=256
 let &t_ut=''
