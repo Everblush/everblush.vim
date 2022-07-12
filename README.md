@@ -10,21 +10,21 @@
 <img src="https://img.shields.io/github/forks/Mangeshrex/uwu.vim?color=e74c4c&labelColor=1b2224&style=for-the-badge"> 
 </p>
 
-## Installation
+# Installation
 
-# Vim-Plug
+## Vim-Plug
 - First install <a href="https://github.com/junegunn/vim-plug">vim-plug</a>
 ```vimscript
 Plug 'mangeshrex/everblush.vim'
 ```
 - Add ```colorscheme everblush``` to .vimrc or init.vim.
 
-# PackerNvim
+### PackerNvim
 ```lua
 use { "mangeshrex/everblush.vim" }`
 ```
 
-# Options
+### Options
 For color highlight:
 ```vimscript
 " To enable
@@ -36,7 +36,7 @@ let g:everblushNR=0
 " Remember to reload colorscheme after changing the variable
 ```
 
-# For Nvim-Lualine 
+### For Nvim-Lualine 
 For lua 
 
 ```
@@ -53,7 +53,7 @@ require('lualine').setup({
 EOF
 ```
 
-# Preview
+### Preview
 
 - Bash 
 <p align="center"> 
@@ -65,7 +65,7 @@ EOF
   <img src="https://raw.githubusercontent.com/Mangeshrex/everblush.vim/main/assets/everblush-lua.png">
 </p> 
 
-# Credits 💝
+### Credits 💝
 <a href="https://github.com/Everblush/everblush.vim/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Everblush/everblush.vim" />
 </a>
