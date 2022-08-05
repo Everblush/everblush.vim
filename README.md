@@ -1,11 +1,14 @@
+<div align="center">
+<img  src="./assets/logo.png" height="200px" width="200px" alt="logo">
+</div> 
+
 <h2 align="center">Everblush Vim/Neovim Theme</h2>
 
 <p>
 <h4 align="center"> <i>Vim/Neovim syntax highlighting with Everblush</i> </h4>
 </p> 
 
-<p align="center">
-<img src="https://img.shields.io/github/stars/Mangeshrex/everblush.vim?color=e5c76b&labelColor=1e2528&style=for-the-badge"> <img src="https://img.shields.io/github/issues/Mangeshrex/everblush.vim?color=67b0e8&labelColor=1e2528&style=for-the-badge">
+img src="https://img.shields.io/github/issues/Mangeshrex/everblush.vim?color=67b0e8&labelColor=1e2528&style=for-the-badge">
 <img src="https://img.shields.io/static/v1?label=license&message=MIT&color=8ccf7e&labelColor=1e2528&style=for-the-badge">
 <img src="https://img.shields.io/github/forks/Everblush/everblush.vim?color=e74c4c&labelColor=1e2528&style=for-the-badge"> 
 </p>
