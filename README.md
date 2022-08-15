@@ -1,5 +1,5 @@
 <div align="center">
-<img  src="https://raw.githubusercontent.com/Everblush/assets/main/logo.png" height="200px" width="200px" alt="logo">
+<img  src="./assets/logo.png" height="200px" width="200px" alt="logo">
 </div> 
 
 <h2 align="center">Everblush Vim/Neovim Theme</h2>
@@ -19,13 +19,13 @@
 ## Vim-Plug
 - First install <a href="https://github.com/junegunn/vim-plug">vim-plug</a>
 ```vimscript
-Plug 'Everblush/everblush.vim'
+Plug 'mangeshrex/everblush.vim'
 ```
 - Add ```colorscheme everblush``` to .vimrc or init.vim.
 
 ### PackerNvim
 ```lua
-use { "Everblush/everblush.vim" }`
+use { "mangeshrex/everblush.vim" }`
 ```
 
 ### Options
@@ -43,7 +43,7 @@ let g:everblushNR=0
 ### For Nvim-Lualine 
 For lua 
 
-```lua
+```
 require('lualine').setup({
   options = { theme = 'everblush' }
 }
@@ -59,15 +59,9 @@ EOF
 
 ### Preview
 
-- Bash 
-<p align="center"> 
-  <img src="https://raw.githubusercontent.com/Mangeshrex/everblush.vim/main/assets/everblush-bash.png"> 
-</p> 
-
-- Lua 
-<p align="center"> 
-  <img src=""https://raw.githubusercontent.com/Everblush/assets/main/vim/everblush-lua.png"">
-</p> 
+<div align="center">
+<img src="https://raw.githubusercontent.com/Everblush/assets/main/vim/img.png">
+</div> 
 
 ### Credits 💝
 <a href="https://github.com/Everblush/everblush.vim/graphs/contributors">
