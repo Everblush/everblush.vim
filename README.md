@@ -1,5 +1,5 @@
 <div align="center">
-<img  src="./assets/logo.png" height="200px" width="200px" alt="logo">
+<img  src="https://raw.githubusercontent.com/Everblush/assets/main/logo.png" height="200px" width="200px" alt="logo">
 </div> 
 
 <h2 align="center">Everblush Vim/Neovim Theme</h2>
