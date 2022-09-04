@@ -24,7 +24,7 @@ let s:everblush15_gui = "#bdc3c2"
 let s:everblushbg_gui = "#141b1e"
 let s:everblushfg_gui = "#dadada"
 
-let s:everblushNR_fg = s:everblush7_gui
+let s:everblushNR_fg = s:everblushfg_gui
 
 hi clear
 syntax reset
