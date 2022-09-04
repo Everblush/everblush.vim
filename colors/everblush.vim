@@ -24,8 +24,6 @@ let s:everblush15_gui = "#bdc3c2"
 let s:everblushbg_gui = "#141b1e"
 let s:everblushfg_gui = "#dadada"
 
-let s:everblushNR_fg = s:everblush7_gui
-
 hi clear
 syntax reset
 let g:colors_name = "everblush"
@@ -51,8 +49,8 @@ if g:everblushNR == 0
 endif
 
 "Syntax Highlighting
-exe "hi CursorLineNR guifg=" s:everblushNR_fg
-exe "hi CursorLine guibg=" s:everblush0_gui
+exe "hi CursorLineNR guifg=" s:everblushfg_gui
+exe "hi CursorLine guibg=" s:everblushfg_gui
 
 exe "hi ErrorMsg guifg=" s:everblush1_gui." guibg="s:everblush8_gui
 exe "hi WarningMsg guifg=" s:everblush0_gui
