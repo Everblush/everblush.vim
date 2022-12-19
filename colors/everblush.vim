@@ -1,293 +1,290 @@
-"
-"Projecteverblush Vim
-" Repository: https://github.com/mangeshre/everblush.vim
-" Maintainer: https://github.com/Mangeshrex
-" LICENSE: MIT
+" Name:         Everblush 
+" Description:  A dark, vibrant and beautiful colorscheme for Vim 
+" Author:       Mangeshrex (https://github.com/Mangeshrex) 
+" Maintainer:   Mangeshrex (https://github.com/Mangeshrex)
+" Website:      https://github.com/Everblush/everblush.vim
+" License:      MIT
+" Last Updated: Mon 19 Dec 2022  
 
-" Setting up the colors
-let s:everblush0_gui = "#232a2d"
-let s:everblush1_gui = "#e57474"
-let s:everblush2_gui = "#8ccf7e"
-let s:everblush3_gui = "#e5c76b"
-let s:everblush4_gui = "#67b0e8"
-let s:everblush5_gui = "#c47fd5"
-let s:everblush6_gui = "#6cbfbf"
-let s:everblush7_gui = "#b3b9b8"
-let s:everblush8_gui = "#3b4244"
-let s:everblush9_gui = "#ef7e7e"
-let s:everblush10_gui = "#96d988"
-let s:everblush11_gui = "#f4d67a"
-let s:everblush12_gui = "#71baf2"
-let s:everblush13_gui = "#ce89df"
-let s:everblush14_gui = "#67cbe7"
-let s:everblush15_gui = "#bdc3c2"
-let s:everblushbg_gui = "#141b1e"
-let s:everblushfg_gui = "#dadada"
+" Colors (xterm-256 colors source: shorturl.at/jyBI7)
+let s:color0   = ['#232a2d', 235] " black
+let s:color1   = ['#e57474', 174] " red
+let s:color2   = ['#8ccf7e', 114] " green
+let s:color3   = ['#e5c76b', 185] " yellow
+let s:color4   = ['#67b0e8',  74] " blue
+let s:color5   = ['#c47fd5', 176] " magenta
+let s:color6   = ['#6cbfbf',  73] " cyan
+let s:color7   = ['#b3b9b8', 249] " white
+let s:color8   = ['#2d3437', 236] " bright black
+let s:color9   = ['#ef7e7e', 210] " bright red
+let s:color10  = ['#96d988', 114] " bright green
+let s:color11  = ['#f4d67a', 222] " bright yellow
+let s:color12  = ['#71baf2',  75] " bright blue
+let s:color13  = ['#ce89df', 176] " bright magenta
+let s:color14  = ['#67cbe7',  80] " bright cyan
+let s:color15  = ['#bdc3c2', 250] " bright white
+let s:bg_color = ['#141b1e', 234] " background
+let s:fg_color = ['#dadada', 253] " foreground
 
-let s:everblushNR_fg = s:everblush7_gui
-
-hi clear
-syntax reset
-let g:colors_name = "everblush"
 set background=dark
-set t_Co=256
-hi Normal guifg=#DADADA ctermbg=NONE guibg=#141b1e gui=NONE
+hi clear
 
-set t_Co=256
-let &t_ut=''
-if exists('+termguicolors')
-  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-  set termguicolors
+if exists('syntax on')
+    syntax reset
 endif
 
-" Focused line Number toggle
-if !exists("g:everblushNR")
+let g:colors_name = 'everblush'
+
+let s:t_Co = exists('&t_Co') && !has('gui_running') ? (&t_Co ?? 0) : -1
+
+if !exists('g:everblushNR')
     let g:everblushNR = 1
 endif
 
-if g:everblushNR == 0
-    let s:everblushNR_fg = .s:everblush0_gui
+hi Normal                        guifg=#dadada ctermfg=253  guibg=#141b1e ctermbg=234  cterm=NONE   gui=NONE
+
+" Term cursor highlighting
+hi TermCursor                    guifg=#dadada ctermfg=253  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TermCursorNC                  guifg=#dadada ctermfg=253  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+
+" Common syntax highlighting
+hi CursorLine                    guifg=NONE    ctermfg=NONE guibg=#232a2d ctermbg=235  cterm=NONE   gui=NONE
+if g:everblushNR == 1
+    hi CursorLineNR              guifg=#b3b9b8 ctermfg=249  guibg=NONE    ctermfg=NONE cterm=NONE   gui=NONE
+else
+    hi CursorLineNR              guifg=#232a2d ctermfg=235  guibg=NONE    ctermfg=NONE cterm=NONE   gui=NONE
 endif
 
-"TermCursor Colors
-exe "hi TermCursor guifg=" s:everblushfg_gui
-exe "hi TermCursorNC guifg=" s:everblushfg_gui
+hi ErrorMsg                      guifg=#e57474 ctermfg=174  guibg=#2d3437 ctermbg=236  cterm=NONE   gui=NONE
+hi WarningMsg                    guifg=#232a2d ctermfg=235  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
 
-"Syntax Highlighting
-exe "hi CursorLineNR guifg=" s:everblushNR_fg
-exe "hi CursorLine guibg=" s:everblush0_gui
+hi PreProc                       guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi Exception                     guifg=#b3b9b8 ctermfg=249  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi Error                         guifg=#e57474 ctermfg=174  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi Type                          guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi Identifier                    guifg=#e57474 ctermfg=174  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
 
-exe "hi ErrorMsg guifg=" s:everblush1_gui." guibg="s:everblush8_gui
-exe "hi WarningMsg guifg=" s:everblush0_gui
+hi Constant                      guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi Repeat                        guifg=#c47fd5 ctermfg=176  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi Keyword                       guifg=#c47fd5 ctermfg=176  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi IncSearch                     guifg=#e5c76b ctermfg=185  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi Title                         guifg=#8ccf7e ctermfg=114  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi PreCondit                     guifg=#c47fd5 ctermfg=176  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi Debug                         guifg=#ce89df ctermfg=176  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi SpecialChar                   guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi Conditional                   guifg=#e57474 ctermfg=174  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi Todo                          guifg=#c47fd5 ctermfg=176  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi Special                       guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi Label                         guifg=#71baf2 ctermfg=75   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi Delimiter                     guifg=#b3b9b8 ctermfg=249  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi Number                        guifg=#6cbfbf ctermfg=73   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi Define                        guifg=#6cbfbf ctermfg=73   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi MoreMsg                       guifg=#67cbe7 ctermfg=80   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi Tag                           guifg=#bdc3c2 ctermfg=250  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi String                        guifg=#8ccf7e ctermfg=114  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi MatchParen                    guifg=#e57474 ctermfg=174  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi Macro                         guifg=#c47fd5 ctermfg=176  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi Function                      guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi Directory                     guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi markdownLinkText              guifg=#ef7e7e ctermfg=210  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi Include                       guifg=#e57474 ctermfg=174  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi Storage                       guifg=#ef7e7e ctermfg=210  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi Statement                     guifg=#c47fd5 ctermfg=176  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi Operator                      guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi ColorColumn                   guifg=NONE    ctermfg=NONE guibg=#2d3437 ctermbg=236  cterm=NONE   gui=NONE
+hi PMenu                         guifg=#b3b9b8 ctermfg=249  guibg=#232a2d ctermbg=235  cterm=NONE   gui=NONE
+hi PMenuSel                      guifg=#2d3437 ctermfg=236  guibg=#c47fd5 ctermbg=176  cterm=NONE   gui=NONE
+hi SignColumn                    guifg=NONE    ctermfg=NONE guibg=#232a2d ctermbg=235  cterm=NONE   gui=NONE
+hi Title                         guifg=#e5c76b ctermfg=185  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi LineNr                        guifg=#2d3437 ctermfg=236  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi NonText                       guifg=#c47fd5 ctermfg=176  guibg=#232a2d ctermbg=235  cterm=NONE   gui=NONE
+hi Comment                       guifg=#2d3437 ctermfg=236  guibg=NONE    ctermbg=NONE cterm=italic gui=italic
+hi SpecialComment                guifg=#2d3437 ctermfg=236  guibg=NONE    ctermbg=NONE cterm=italic gui=italic 
+hi TabLineFill                   guifg=NONE    ctermfg=NONE guibg=#2d3437 ctermbg=236  cterm=italic gui=italic
+hi TabLine                       guifg=#b3b9b8 ctermfg=249  guibg=#2d3437 ctermbg=236  cterm=NONE   gui=NONE
+hi StatusLine                    guifg=#dadada ctermfg=253  guibg=#141b1e ctermbg=234  cterm=NONE   gui=NONE  
+hi StatusLineNC                  guifg=#dadada ctermfg=253  guibg=#141b1e ctermbg=234  cterm=NONE   gui=NONE  
+hi Search                        guifg=#67b0e8 ctermfg=74   guibg=#2d3437 ctermbg=236  cterm=NONE   gui=NONE
+hi VertSplit                     guifg=#2d3437 ctermfg=236  guibg=#232a2d ctermbg=235  cterm=NONE   gui=NONE
+hi Visual                        guifg=NONE    ctermfg=NONE guibg=#232a2d ctermbg=235  cterm=NONE   gui=NONE
+hi Underlined                    guifg=#e5c76b ctermfg=185  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi EndOfBuffer                   guifg=NONE    ctermfg=NONE guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
 
-exe "hi PreProc guifg=" s:everblush4_gui
-exe "hi Exception guifg=" s:everblush7_gui
-exe "hi Error guifg=" s:everblush1_gui
-exe "hi Type guifg=" s:everblush4_gui
-exe "hi Identifier guifg=" s:everblush1_gui
+" Spell highlighting
+hi SpellBad                      guifg=#e57474 ctermfg=174  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi SpellCap                      guifg=#e57474 ctermfg=174  guibg=#2d3437 ctermbg=236  cterm=NONE   gui=NONE
+hi SpellLocal                    guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi SpellRare                     guifg=#c47fd5 ctermfg=176  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
 
-exe "hi Constant guifg=" s:everblush4_gui
-exe "hi Repeat guifg=" s:everblush5_gui
-exe "hi Keyword guifg=" s:everblush5_gui
-exe "hi IncSearch guifg=" s:everblush3_gui
-exe "hi Title guifg=" s:everblush2_gui
-exe "hi PreCondit guifg=" s:everblush5_gui
-exe "hi Debug guifg=" s:everblush13_gui
-exe "hi SpecialChar guifg=" s:everblush4_gui
-exe "hi Conditional guifg=" s:everblush1_gui
-exe "hi Todo guifg=" s:everblush5_gui
-exe "hi Special guifg=" s:everblush4_gui
-exe "hi Label guifg=" s:everblush12_gui
-exe "hi Delimiter guifg=" s:everblush7_gui
-exe "hi Number guifg=" s:everblush6_gui
-exe "hi Define guifg=" s:everblush6_gui
-exe "hi MoreMsg guifg=" s:everblush14_gui
-exe "hi Tag guifg=" s:everblush15_gui
-exe "hi String guifg=" s:everblush2_gui
-exe "hi MatchParen guifg=" s:everblush1_gui
-exe "hi Macro guifg=" s:everblush5_gui
-exe "hi Function guifg=" s:everblush4_gui
-exe "hi Directory guifg=" s:everblush4_gui
-exe "hi markdownLinkText guifg=" s:everblush9_gui
-exe "hi Include guifg=" s:everblush1_gui
-exe "hi Storage guifg=" s:everblush9_gui
-exe "hi Statement guifg=" s:everblush5_gui
-exe "hi Operator guifg=" s:everblush4_gui
-exe "hi ColorColumn guibg=" s:everblush8_gui
-exe "hi PMenu guifg="s:everblush7_gui." guibg=" s:everblush0_gui
-exe "hi PMenuSel guifg="s:everblush8_gui." guibg="s:everblush5_gui
-exe "hi SignColumn guibg=" s:everblush0_gui
-exe "hi Title guifg=" s:everblush3_gui
-exe "hi LineNr guifg="s:everblush8_gui
-exe "hi NonText guifg="s:everblush5_gui." guibg="s:everblush0_gui
-exe "hi Comment guifg="s:everblush8_gui "gui=italic" 
-exe "hi SpecialComment guifg="s:everblush8_gui "gui=italic guibg=NONE "
-exe "hi TabLineFill gui=NONE guibg="s:everblush8_gui
-exe "hi TabLine guifg="s:everblush7_gui." guibg="s:everblush8_gui
-exe "hi StatusLine guibg="s:everblushbg_gui." guifg="s:everblushfg_gui
-exe "hi StatusLineNC guibg="s:everblushbg_gui." guifg="s:everblushfg_gui
-exe "hi Search guibg="s:everblush8_gui." guifg="s:everblush4_gui
-exe "hi VertSplit gui=NONE guifg="s:everblush8_gui." guibg="s:everblush0_gui
-exe "hi Visual gui=NONE guibg="s:everblush0_gui
-exe "hi Underlined guifg="s:everblush3_gui
-exe "hi EndOfBuffer guibg=NONE"
+" Diff highlighting
+hi DiffAdd                       guifg=#8ccf7e ctermfg=114  guibg=#141b1e ctermbg=234  cterm=NONE   gui=NONE 
+hi DiffChange                    guifg=#c47fd5 ctermfg=176  guibg=#141b1e ctermbg=234  cterm=NONE   gui=NONE 
+hi DiffDelete                    guifg=#6cbfbf ctermfg=73   guibg=#141b1e ctermbg=234  cterm=NONE   gui=NONE 
+hi DiffText                      guifg=#e57474 ctermfg=174  guibg=#141b1e ctermbg=234  cterm=NONE   gui=NONE 
 
-" Spell Highlightings
-exe "hi SpellBad guifg="s:everblush1_gui
-exe "hi SpellCap guifg="s:everblush1_gui." guibg="s:everblush8_gui
-exe "hi SpellLocal guifg="s:everblush4_gui
-exe "hi SpellRare guifg="s:everblush5_gui
+" GitGutter highlighting
+hi GitGutterAdd                  guifg=#e5c76b ctermfg=185  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi GitGutterChange               guifg=#e57474 ctermfg=174  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi GitGutterDelete               guifg=#e5c76b ctermfg=185  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi GitGutterChangeDelete         guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi GitGutterLineHighlightsEnable guifg=#ef7e7e ctermfg=210  guibg=#2d3437 ctermbg=236  cterm=NONE   gui=NONE
 
-" Diff Highlightings
-exe "hi DiffAdd guifg="s:everblush2_gui." guibg="s:everblushbg_gui
-exe "hi DiffChange guifg="s:everblush5_gui." guibg="s:everblushbg_gui
-exe "hi DiffDelete guifg="s:everblush6_gui." guibg="s:everblushbg_gui
-exe "hi DiffText guifg="s:everblush1_gui." guibg="s:everblushbg_gui
+" Nvim-Treesitter highlighting
+hi TSAttribute                   guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSBoolean                     guifg=#6cbfbf ctermfg=73   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSCharacter                   guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSComment                     guifg=#2d3437 ctermfg=236  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSConditional                 guifg=#e57474 ctermfg=174  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSConstant                    guifg=#6cbfbf ctermfg=73   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSConstBuiltin                guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSConstMacro                  guifg=#e5c76b ctermfg=185  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSConstructor                 guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSException                   guifg=#2d3437 ctermfg=236  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSField                       guifg=#e57474 ctermfg=174  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSFloat                       guifg=#2d3437 ctermfg=236  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSFunction                    guifg=#e57474 ctermfg=174  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSFuncBuiltin                 guifg=#67cbe7 ctermfg=80   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSFuncMacro                   guifg=#8ccf7e ctermfg=114  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSInclude                     guifg=#ef7e7e ctermfg=210  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSKeyword                     guifg=#c47fd5 ctermfg=176  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSKeywordFunction             guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TsKeywordOperator             guifg=#71baf2 ctermfg=75   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSKeywordReturn               guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSLabel                       guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSMethod                      guifg=#71baf2 ctermfg=75   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSNamespace                   guifg=#ef7e7e ctermfg=210  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSNumber                      guifg=#e5c76b ctermfg=185  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSParameter                   guifg=#e57474 ctermfg=174  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSParameterReference          guifg=#ef7e7e ctermfg=210  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSProperty                    guifg=#e57474 ctermfg=174  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSPunctDelimiter              guifg=#b3b9b8 ctermfg=249  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSPunctBracket                guifg=#b3b9b8 ctermfg=249  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSPunctSpecial                guifg=#b3b9b8 ctermfg=249  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSRepeat                      guifg=#f4d67a ctermfg=222  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSString                      guifg=#8ccf7e ctermfg=114  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSStringRegex                 guifg=#8ccf7e ctermfg=114  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSStringEscape                guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSStringSpecial               guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSSymbol                      guifg=#e57474 ctermfg=174  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSTag                         guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSTagAttribute                guifg=#e57474 ctermfg=174  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSTagDelimiter                guifg=#b3b9b8 ctermfg=249  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSText                        guifg=#b3b9b8 ctermfg=249  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSStrong                      guifg=#b3b9b8 ctermfg=249  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSEmphasis                    guifg=#b3b9b8 ctermfg=249  guibg=NONE    ctermbg=NONE cterm=italic gui=italic 
+hi TSUnderline                   guifg=#c47fd5 ctermfg=176  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSStrike                      guifg=#b3b9b8 ctermfg=249  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSTitle                       guifg=#e5c76b ctermfg=185  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSLiteral                     guifg=#8ccf7e ctermfg=114  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSURI                         guifg=#e5c76b ctermfg=185  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSMath                        guifg=#6cbfbf ctermfg=73   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSTextReference               guifg=#6cbfbf ctermfg=73   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSEnvirontment                guifg=#c47fd5 ctermfg=176  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSEnvironmentName             guifg=#e5c76b ctermfg=185  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSNote                        guifg=#2d3437 ctermfg=236  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSWarning                     guifg=#232a2d ctermfg=235  guibg=#e57474 ctermbg=174  cterm=NONE   gui=NONE
+hi TSDanger                      guifg=#2d3437 ctermfg=236  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSType                        guifg=#e5c76b ctermfg=185  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSTypeBuiltin                 guifg=#e5c76b ctermfg=185  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSVariable                    guifg=#b3b9b8 ctermfg=249  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi TSVariableBuiltin             guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
 
-" GitGutter Highlightings
-exe "hi GitGutterAdd guifg="s:everblush3_gui
-exe "hi GitGutterChange guifg="s:everblush1_gui
-exe "hi GitGutterDelete guifg="s:everblush3_gui
-exe "hi GitGutterChangeDelete guifg="s:everblush4_gui
-exe "hi GitGutterLineHighlightsEnable guifg="s:everblush9_gui." guibg="s:everblush8_gui
+" C highlighting 
+hi cConstant                     guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi cCppBracket                   guifg=#b3b9b8 ctermfg=249  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi cCppInElse                    guifg=#b3b9b8 ctermfg=249  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi cCppInElse2                   guifg=#b3b9b8 ctermfg=249  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi cCppInIf                      guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi cCppInSkip                    guifg=#b3b9b8 ctermfg=249  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi cCppInWapper                  guifg=#c47fd5 ctermfg=176  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi cCppOutElse                   guifg=#b3b9b8 ctermfg=249  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi cCppOutIf                     guifg=#2d3437 ctermfg=236  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi cCppOutIf2                    guifg=#2d3437 ctermfg=236  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi cCppOutInGroup                guifg=#2d3437 ctermfg=236  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi cCppOutSkip                   guifg=#2d3437 ctermfg=236  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi cCppOutWrapper                guifg=#c47fd5 ctermfg=176  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi cCppParen                     guifg=#b3b9b8 ctermfg=249  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi cCppString                    guifg=#8ccf7e ctermfg=114  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi cCurlyError                   guifg=#b3b9b8 ctermfg=249  guibg=#ef7e7e ctermbg=210  cterm=NONE   gui=NONE
+hi cErrInBracket                 guifg=#b3b9b8 ctermfg=249  guibg=#ef7e7e ctermbg=210  cterm=NONE   gui=NONE
+hi cErrInParen                   guifg=#b3b9b8 ctermfg=249  guibg=#ef7e7e ctermbg=210  cterm=NONE   gui=NONE
+hi cFloat                        guifg=#2d3437 ctermfg=236  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi cFormat                       guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi cMutli                        guifg=#e5c76b ctermfg=185  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi cOperator                     guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi cParen                        guifg=#e5c76b ctermfg=185  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi cParenError                   guifg=#b3b9b8 ctermfg=249  guibg=#ef7e7e ctermbg=210  cterm=NONE   gui=NONE
+hi PreProcGroup                  guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi cSpaceError                   guifg=#e57474 ctermfg=174  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi cSpecial                      guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi cSpecialCharacter             guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi cStatement                    guifg=#c47fd5 ctermfg=176  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi cStorageClass                 guifg=#e5c76b ctermfg=185  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi cString                       guifg=#8ccf7e ctermfg=114  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi cType                         guifg=#e5c76b ctermfg=185  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi cUserCont                     guifg=#b3b9b8 ctermfg=249  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
 
-" Nvim-Treesitter Highlights
-exe "hi TSAttribute guifg="s:everblush4_gui
-exe "hi TSBoolean guifg="s:everblush6_gui
-exe "hi TSCharacter guifg="s:everblush4_gui
-exe "hi TSComment guifg="s:everblush8_gui
-exe "hi TSConditional guifg="s:everblush1_gui
-exe "hi TSConstant guifg="s:everblush6_gui
-exe "hi TSConstBuiltin guifg="s:everblush4_gui
-exe "hi TSConstMacro guifg="s:everblush3_gui
-exe "hi TSConstructor guifg="s:everblush4_gui
-exe "hi TSException guifg="s:everblush8_gui
-exe "hi TSField guifg="s:everblush1_gui
-exe "hi TSFloat guifg="s:everblush8_gui
-exe "hi TSFunction guifg="s:everblush1_gui
-exe "hi TSFuncBuiltin guifg="s:everblush14_gui
-exe "hi TSFuncMacro guifg="s:everblush2_gui
-exe "hi TSInclude guifg="s:everblush9_gui
-exe "hi TSKeyword guifg="s:everblush5_gui
-exe "hi TSKeywordFunction guifg="s:everblush4_gui
-exe "hi TsKeywordOperator guifg="s:everblush12_gui
-exe "hi TSKeywordReturn guifg="s:everblush4_gui
-exe "hi TSLabel guifg="s:everblush4_gui
-exe "hi TSMethod guifg="s:everblush12_gui
-exe "hi TSNamespace guifg="s:everblush9_gui
-exe "hi TSNumber guifg="s:everblush3_gui
-exe "hi TSParameter guifg="s:everblush1_gui
-exe "hi TSParameterReference guifg="s:everblush9_gui
-exe "hi TSProperty guifg="s:everblush1_gui
-exe "hi TSPunctDelimiter guifg="s:everblush7_gui
-exe "hi TSPunctBracket guifg="s:everblush7_gui
-exe "hi TSPunctSpecial guifg="s:everblush7_gui
-exe "hi TSRepeat guifg="s:everblush11_gui
-exe "hi TSString guifg="s:everblush2_gui
-exe "hi TSStringRegex guifg="s:everblush2_gui
-exe "hi TSStringEscape guifg="s:everblush4_gui
-exe "hi TSStringSpecial guifg="s:everblush4_gui
-exe "hi TSSymbol guifg="s:everblush1_gui
-exe "hi TSTag guifg="s:everblush4_gui
-exe "hi TSTagAttribute guifg="s:everblush1_gui
-exe "hi TSTagDelimiter guifg="s:everblush7_gui
-exe "hi TSText guifg="s:everblush7_gui
-exe "hi TSStrong guifg="s:everblush7_gui
-exe "hi TSEmphasis gui=italic guifg="s:everblush7_gui
-exe "hi TSUnderline guifg="s:everblush5_gui
-exe "hi TSStrike guifg="s:everblush7_gui
-exe "hi TSTitle guifg="s:everblush3_gui
-exe "hi TSLiteral guifg="s:everblush2_gui
-exe "hi TSURI guifg="s:everblush3_gui
-exe "hi TSMath guifg="s:everblush6_gui
-exe "hi TSTextReference guifg="s:everblush6_gui
-exe "hi TSEnvirontment guifg="s:everblush5_gui
-exe "hi TSEnvironmentName guifg="s:everblush3_gui
-exe "hi TSNote guifg="s:everblush8_gui
-exe "hi TSWarning guifg="s:everblush0_gui." guibg="s:everblush1_gui
-exe "hi TSDanger guifg="s:everblush8_gui
-exe "hi TSType guifg="s:everblush3_gui
-exe "hi TSTypeBuiltin guifg="s:everblush3_gui
-exe "hi TSVariable guifg="s:everblush7_gui
-exe "hi TSVariableBuiltin guifg="s:everblush4_gui
+" Go highlighting
+hi goBlock                       guifg=#b3b9b8 ctermfg=249  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goBuiltins                    guifg=#ce89df ctermfg=176  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goCharacter                   guifg=#e57474 ctermfg=174  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goComment                     guifg=#2d3437 ctermfg=236  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goComplexes                   guifg=#e5c76b ctermfg=185  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goConditional                 guifg=#c47fd5 ctermfg=176  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goConstants                   guifg=#c47fd5 ctermfg=176  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goDecimalInt                  guifg=#e5c76b ctermfg=185  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goDeclType                    guifg=#ce89df ctermfg=176  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goDeclaration                 guifg=#c47fd5 ctermfg=176  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goDirective                   guifg=#e57474 ctermfg=174  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goEscapeC                     guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goEscapeBigU                  guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goEscapeError                 guifg=#232a2d ctermfg=235  guibg=#e57474 ctermbg=174  cterm=NONE   gui=NONE
+hi goEscapeOctal                 guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goEscapeU                     guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goEscapeX                     guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goExtraType                   guifg=#e5c76b ctermfg=185  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goFloat                       guifg=#f4d67a ctermfg=222  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goFloats                      guifg=#71baf2 ctermfg=75   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goHexadecimalInt              guifg=#e5c76b ctermfg=185  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goImaginary                   guifg=#e5c76b ctermfg=185  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goLabel                       guifg=#e5c76b ctermfg=185  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goOctalError                  guifg=#e57474 ctermfg=174  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goOctalInt                    guifg=#f4d67a ctermfg=222  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goParen                       guifg=#b3b9b8 ctermfg=249  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goRawString                   guifg=#96d988 ctermfg=114  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goRepeat                      guifg=#e5c76b ctermfg=185  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goSignedInts                  guifg=#f4d67a ctermfg=222  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goSpaceError                  guifg=#232a2d ctermfg=235  guibg=#e57474 ctermbg=174  cterm=NONE   gui=NONE
+hi goSpecialString               guifg=#71baf2 ctermfg=75   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goStatement                   guifg=#e57474 ctermfg=174  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goString                      guifg=#96d988 ctermfg=114  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goTSComment                   guifg=#2d3437 ctermfg=236  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goTSFunction                  guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goTSInclude                   guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goTSkeyword                   guifg=#c47fd5 ctermfg=176  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goTSKeywordFunction           guifg=#c47fd5 ctermfg=176  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goTSMethod                    guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goTSNumber                    guifg=#2d3437 ctermfg=236  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goTSOperator                  guifg=#71baf2 ctermfg=75   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goTSProperty                  guifg=#e57474 ctermfg=174  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goTSPunctBracket              guifg=#6cbfbf ctermfg=73   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goTSPunctDelimiter            guifg=#ce89df ctermfg=176  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goTSRepeat                    guifg=#e5c76b ctermfg=185  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goTSString                    guifg=#96d988 ctermfg=114  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goTSType                      guifg=#e5c76b ctermfg=185  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goTSTypeBuiltin               guifg=#e5c76b ctermfg=185  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goTSVariable                  guifg=#c47fd5 ctermfg=176  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goTodo                        guifg=#e5c76b ctermfg=185  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi goType                        guifg=#e5c76b ctermfg=185  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
 
-" C Language Higlights
-exe "hi cConstant guifg="s:everblush4_gui
-exe "hi cCppBracket guifg="s:everblush7_gui
-exe "hi cCppInElse guifg="s:everblush7_gui
-exe "hi cCppInElse2 guifg="s:everblush7_gui
-exe "hi cCppInIf guifg="s:everblush4_gui
-exe "hi cCppInSkip guifg="s:everblush7_gui
-exe "hi cCppInWapper guifg="s:everblush5_gui
-exe "hi cCppOutElse guifg="s:everblush7_gui
-exe "hi cCppOutIf guifg="s:everblush8_gui
-exe "hi cCppOutIf2 guifg="s:everblush8_gui
-exe "hi cCppOutInGroup guifg="s:everblush8_gui
-exe "hi cCppOutSkip guifg="s:everblush8_gui
-exe "hi cCppOutWrapper guifg="s:everblush5_gui
-exe "hi cCppParen guifg="s:everblush7_gui
-exe "hi cCppString guifg="s:everblush2_gui
-exe "hi cCurlyError guifg="s:everblush7_gui." guibg="s:everblush9_gui
-exe "hi cErrInBracket guifg="s:everblush7_gui." guibg="s:everblush9_gui
-exe "hi cErrInParen guifg="s:everblush7_gui." guibg="s:everblush9_gui
-exe "hi cFloat guifg="s:everblush8_gui
-exe "hi cFormat guifg="s:everblush4_gui
-exe "hi cMutli guifg="s:everblush3_gui
-exe "hi cOperator guifg="s:everblush4_gui
-exe "hi cParen guifg="s:everblush3_gui
-exe "hi cParenError guifg="s:everblush7_gui." guibg="s:everblush9_gui
-exe "hi PreProcGroup guifg="s:everblush4_gui
-exe "hi cSpaceError guifg="s:everblush1_gui
-exe "hi cSpecial guifg="s:everblush4_gui
-exe "hi cSpecialCharacter guifg="s:everblush4_gui
-exe "hi cStatement guifg="s:everblush5_gui
-exe "hi cStorageClass guifg="s:everblush3_gui
-exe "hi cString guifg="s:everblush2_gui
-exe "hi cType guifg="s:everblush3_gui
-exe "hi cUserCont guifg="s:everblush7_gui
-
-" GoLang Highlight Groups
-exe "hi goBlock guifg="s:everblush7_gui
-exe "hi goBuiltins guifg="s:everblush13_gui
-exe "hi goCharacter guifg="s:everblush1_gui
-exe "hi goComment guifg="s:everblush8_gui
-exe "hi goComplexes guifg="s:everblush3_gui
-exe "hi goConditional guifg="s:everblush5_gui
-exe "hi goConstants guifg="s:everblush5_gui
-exe "hi goDecimalInt  guifg="s:everblush3_gui
-exe "hi goDeclType guifg="s:everblush13_gui
-exe "hi goDeclaration guifg="s:everblush5_gui
-exe "hi goDirective guifg="s:everblush1_gui
-exe "hi goEscapeC guifg="s:everblush4_gui
-exe "hi goEscapeBigU guifg="s:everblush4_gui
-exe "hi goEscapeError guifg="s:everblush0_gui." guibg="s:everblush1_gui
-exe "hi goEscapeOctal guifg="s:everblush4_gui
-exe "hi goEscapeU guifg="s:everblush4_gui
-exe "hi goEscapeX guifg="s:everblush4_gui
-exe "hi goExtraType guifg="s:everblush3_gui
-exe "hi goFloat guifg="s:everblush11_gui
-exe "hi goFloats guifg="s:everblush12_gui
-exe "hi goHexadecimalInt guifg="s:everblush3_gui
-exe "hi goImaginary guifg="s:everblush3_gui
-exe "hi goLabel guifg="s:everblush3_gui
-exe "hi goOctalError guifg="s:everblush1_gui
-exe "hi goOctalInt guifg="s:everblush11_gui
-exe "hi goParen guifg="s:everblush7_gui
-exe "hi goRawString guifg="s:everblush10_gui
-exe "hi goRepeat guifg="s:everblush3_gui
-exe "hi goSignedInts guifg="s:everblush11_gui
-exe "hi goSpaceError guifg="s:everblush0_gui." guibg="s:everblush1_gui
-exe "hi goSpecialString guifg="s:everblush12_gui
-exe "hi goStatement guifg="s:everblush1_gui
-exe "hi goString guifg="s:everblush10_gui
-exe "hi goTSComment guifg="s:everblush8_gui
-exe "hi goTSFunction guifg="s:everblush4_gui
-exe "hi goTSInclude guifg="s:everblush4_gui
-exe "hi goTSkeyword guifg="s:everblush5_gui
-exe "hi goTSKeywordFunction guifg="s:everblush5_gui
-exe "hi goTSMethod guifg="s:everblush4_gui
-exe "hi goTSNumber guifg="s:everblush8_gui
-exe "hi goTSOperator guifg="s:everblush12_gui
-exe "hi goTSProperty guifg="s:everblush1_gui
-exe "hi goTSPunctBracket guifg="s:everblush6_gui
-exe "hi goTSPunctDelimiter guifg="s:everblush13_gui
-exe "hi goTSRepeat guifg="s:everblush3_gui
-exe "hi goTSString guifg="s:everblush10_gui
-exe "hi goTSType guifg="s:everblush3_gui
-exe "hi goTSTypeBuiltin guifg="s:everblush3_gui
-exe "hi goTSVariable guifg="s:everblush5_gui
-exe "hi goTodo guifg="s:everblush3_gui
-exe "hi goType guifg="s:everblush3_gui
-
-" NvimTree Highlights
-exe "hi NvimTreeFolderIcon guifg="s:everblush3_gui
-exe "hi NvimTreeFoldername guifg="s:everblushfg_gui
-exe "hi NvimTreeOpenedFolderName guifg="s:everblush4_gui
-exe "hi NvimTreeEmptyFolderName guifg="s:everblush4_gui
-exe "hi NvimTreeFileDirty guifg="s:everblush1_gui
-exe "hi NvimTreeExecFile guifg="s:everblushfg_gui
-exe "hi NvimTreeGitDirty guifg="s:everblush1_gui
-exe "hi NvimTreeGitDeleted guifg="s:everblush1_gui
-exe "hi NvimTreeRootFolder guifg="s:everblush5_gui
-exe "hi NvimTreeIndentMarker guifg="s:everblush0_gui
+" NvimTree highlighting
+hi NvimTreeFolderIcon            guifg=#e5c76b ctermfg=185  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi NvimTreeFoldername            guifg=#dadada ctermfg=253  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi NvimTreeOpenedFolderName      guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi NvimTreeEmptyFolderName       guifg=#67b0e8 ctermfg=74   guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi NvimTreeFileDirty             guifg=#e57474 ctermfg=174  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi NvimTreeExecFile              guifg=#dadada ctermfg=253  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi NvimTreeGitDirty              guifg=#e57474 ctermfg=174  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi NvimTreeGitDeleted            guifg=#e57474 ctermfg=174  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi NvimTreeRootFolder            guifg=#c47fd5 ctermfg=176  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
+hi NvimTreeIndentMarker          guifg=#232a2d ctermfg=235  guibg=NONE    ctermbg=NONE cterm=NONE   gui=NONE
