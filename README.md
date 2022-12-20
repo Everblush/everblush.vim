@@ -87,7 +87,8 @@ require('lualine').setup({
 })
 ```
 **Using VimScript**
-```lua << EOF
+```vim
+lua << EOF
 require('lualine').setup({
     options = { 'theme': 'everblush' }
 })
