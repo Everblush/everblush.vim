@@ -23,20 +23,24 @@
 
 ### [Vim packages](https://vimhelp.org/repeat.txt.html#packages)
 - If not already present, create the plugin directory as follows:
-    * **Linux**
+    **Linux**
+
     ```
     mkdir -p $HOME/.vim/pack/plugins/start
     ```
-    * **Windows**
+    **Windows**
+
     ```
     mkdir -p $HOME\vimfiles\pack\plugins\start
     ```
 - Clone this repository to this directory as follows:
-    * **Linux**
+    **Linux**
+
     ```
     git clone --depth=1 https://github.com/Everblush/everblush.vim $HOME/.vim/pack/plugins/start/everblush.vim
     ```
-    * **Windows**
+    **Windows**
+
     ```
     git clone --depth=1 https://github.com/Everblush/everblush.vim $HOME\vimfiles\pack\plugins\start\everblush.vim
     ```
