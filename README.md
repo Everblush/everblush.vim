@@ -102,7 +102,7 @@ let g:lightline = {'colorscheme': 'everblush'}
 
 ## Additional configuration
 
-Line number highlighting is enabled by default. To disable, add the line `g:everblushNR = 0` to your `vimrc` before `colorscheme evrblush`.
+Line number highlighting is enabled by default. To disable, add the line `g:everblushNR = 0` to your `vimrc` before `colorscheme everblush`.
 
 ## Credits
 
