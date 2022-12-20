@@ -22,7 +22,7 @@
 ## Installation
 
 ### [Vim packages](https://vimhelp.org/repeat.txt.html#packages)
-- If not already present, create the plugin directory as follows:<br>
+- If not already present, create the plugin directory as follows:<br><br>
     **Linux**
 
     ```
@@ -33,7 +33,7 @@
     ```
     mkdir -p $HOME\vimfiles\pack\plugins\start
     ```
-- Clone this repository to this directory as follows:<br>
+- Clone this repository to this directory as follows:<br><br>
     **Linux**
 
     ```
@@ -51,7 +51,7 @@
 - Add `colorscheme everblush` to your `vimrc` after `call plug#end()` to enable the colorscheme.
 
 ### [Pathogen](https://github.com/tpope/vim-pathogen)
-- Install the plugin as follows:<br>
+- Install the plugin as follows:<br><br>
     **Linux**
 
     ```
