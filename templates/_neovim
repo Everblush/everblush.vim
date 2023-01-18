@@ -1,0 +1,12 @@
+; vim: ft=colortemplate
+
+; Diagnostic
+DiagnosticError             color1     none
+DiagnosticHint              color2     none
+DiagnosticInfo              color4     none
+DiagnosticWarn              color3     none
+
+; Neovim
+healthError                 color1     none
+healthSuccess               color4     none
+healthWarning               color5     none

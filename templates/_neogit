@@ -1,0 +1,18 @@
+; vim: ft=colortemplate
+
+; Neogit: https://github.com/TimUntersberger/neogit
+#if get(g:, '@optionprefix_transp_bg', 0)
+    NeogitDiffAddHighlight      color4     none
+    NeogitDiffContextHighlight  foreground none
+    NeogitDiffDeleteHighlight   color1     none
+    NeogitHunkHeader            foreground none
+#else
+    NeogitDiffAddHighlight      color4     background
+    NeogitDiffContextHighlight  foreground background
+    NeogitDiffDeleteHighlight   color1     background
+    NeogitHunkHeader            foreground background
+#endif
+
+NeogitBranch                    color6     none
+NeogitHunkHeaderHighlight       color7     comment
+NeogitRemote                    color6     none

@@ -1,0 +1,4 @@
+; vim: ft=colortemplate
+
+; indent-blankline.nvim: https://github.com/lukas-reineke/indent-blankline.nvim
+IndentBlanklineChar             color0     none

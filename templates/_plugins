@@ -1,0 +1,25 @@
+; vim: ft=colortemplate
+
+Include: _trouble_nvim
+
+Include: _vim_illuminate
+
+Include: _neogit
+
+Include: _nvim_cmp
+
+Include: _vim_gitgutter
+
+Include: _gitsigns
+
+Include: _telescope_nvim
+
+Include: _indent_blankline_nvim
+
+Include: _nvim_tree_lua
+
+Include: _lspsaga_nvim
+
+Include: _bufferline_nvim
+
+Include: _nvim_treesitter

@@ -1,0 +1,24 @@
+; vim: ft=colortemplate
+
+; lspsaga.nvim: https://github.com/glepnir/lspsaga.nvim
+#if get(g:, '@optionprefix_transp_bg', 0)
+    LspFloatWinNormal           none       none
+#else
+    LspFloatWinNormal           none       background
+#endif
+
+DefinitionCount             color6     none
+DefinitionIcon              color7     none
+LspFloatWinBorder           background none
+LspSagaBorderTitle          color7     none
+LspSagaCodeActionBorder     color7     none
+LspSagaCodeActionContent    color6     none
+LspSagaCodeActionTitle      color7     none
+LspSagaDefPreviewBorder     color4     none
+LspSagaFinderSelection      color1     none
+LspSagaHoverBorder          color7     none
+LspSagaRenameBorder         color4     none
+LspSagaSignatureHelpBorder  color1     none
+ReferencesCount             color6     none
+ReferencesIcon              color7     none
+TargetWord                  color7     none

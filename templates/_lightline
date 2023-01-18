@@ -1,15 +1,16 @@
+auxfile autoload/lightline/colorscheme/@shortname.vim
 
-if &background ==# 'dark'
-    let s:color0     = ['#232a2d', 235]
-    let s:color1     = ['#e57474', 174]
-    let s:color2     = ['#8ccf7e', 114]
-    let s:color3     = ['#e5c76b', 221]
-    let s:color4     = ['#67b0e8', 110]
-    let s:color5     = ['#c47fd5', 176]
-    let s:color6     = ['#6cbfbf', 73]
-    let s:color7     = ['#b3b9b8', 250]
-    let s:background = ['#141b1e', 234]
-    let s:foreground = ['#dadada', 253]
+if &background ==# '@background'
+    let s:color0     = ['@guicolor0', @term256color0]
+    let s:color1     = ['@guicolor1', @term256color1]
+    let s:color2     = ['@guicolor2', @term256color2]
+    let s:color3     = ['@guicolor3', @term256color3]
+    let s:color4     = ['@guicolor4', @term256color4]
+    let s:color5     = ['@guicolor5', @term256color5]
+    let s:color6     = ['@guicolor6', @term256color6]
+    let s:color7     = ['@guicolor7', @term256color7]
+    let s:background = ['@guibackground', @term256background]
+    let s:foreground = ['@guiforeground', @term256foreground]
 
     let s:p = {'normal':{}, 'inactive':{}, 'insert':{}, 'replace':{}, 'visual':{}, 'tabline':{}}
 
@@ -40,6 +41,7 @@ if &background ==# 'dark'
     let s:p.tabline.middle = [ [ s:background, s:background ] ]
     let s:p.tabline.right = [ [ s:background, s:color5 ] ]
 
-    let g:lightline#colorscheme#everblush#palette = lightline#colorscheme#flatten(s:p)
+    let g:lightline#colorscheme#@shortname#palette = lightline#colorscheme#flatten(s:p)
 endif
 
+endauxfile

@@ -1,0 +1,10 @@
+; vim: ft=colortemplate
+
+; bufferline.nvim: https://github.com/akinsho/bufferline.nvim
+#if get(g:, '@optionprefix_transp_bg', 0)
+    BufferLineFill              background none
+#else
+    BufferLineFill              background background
+#endif
+
+BufferLineIndicatorSelected     color2     none

@@ -1,0 +1,6 @@
+; vim: ft=colortemplate
+
+; vim-gitgutter: https://github.com/airblade/vim-gitgutter
+GitGutterAdd                    color4     none
+GitGutterChange                 color5     none
+GitGutterDelete                 color1     none

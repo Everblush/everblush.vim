@@ -1,0 +1,5 @@
+; vim: ft=colortemplate
+
+; vim-illuminate: https://github.com/RRethy/vim-illuminate
+illuminatedCurWord              none       foreground
+illuminatedWord                 none       foreground
