@@ -13,7 +13,6 @@
     FoldColumn                  color4     none
     Folded                      color4     none
     Ignore                      color7     none
-    LineNr                      color0     none
     MatchParen                  color4     none
     ModeMsg                     foreground none
     MsgArea                     foreground none
@@ -42,7 +41,6 @@
     FoldColumn                  color4     background
     Folded                      color4     background
     Ignore                      color7     background
-    LineNr                      color0     background
     MatchParen                  color4     background
     ModeMsg                     foreground background
     MsgArea                     foreground background
@@ -59,6 +57,20 @@
     Todo                        color1     background
     VisualNOS                   none       background
     WarningMsg                  color3     background
+#endif
+
+#if get(g:, '@optionprefix_transp_bg', 0)
+    #if get (g:, 'everblushNR', 1)
+        LineNr                  color0     none
+    #else
+        LineNr                  color7     none
+    #endif
+#else
+    #if get (g:, 'everblushNR', 1)
+        LineNr                  color0     background
+    #else
+        LineNr                  color7     background
+    #endif
 #endif
 
 Boolean                         color5     none
