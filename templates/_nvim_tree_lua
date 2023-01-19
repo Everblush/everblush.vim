@@ -2,10 +2,10 @@
 
 ; nvim-tree.lua: https://github.com/nvim-tree/nvim-tree.lua
 #if get(g:, '@optionprefix_transp_bg', 0)
-    NvimTreeFolderIcon          color4     none 
-    NvimTreeNormal              foreground none 
-    NvimTreeNormalNC            foreground none 
-    NvimTreeStatusLineNC        background none 
+    NvimTreeFolderIcon          color4     none
+    NvimTreeNormal              foreground none
+    NvimTreeNormalNC            foreground none
+    NvimTreeStatusLineNC        background none
 #else
     NvimTreeFolderIcon          color4     background
     NvimTreeNormal              foreground background
