@@ -1,0 +1,21 @@
+; vim: ft=colortemplate
+
+Color: color0     #232a2d ~
+Color: color1     #e57474 ~
+Color: color2     #8ccf7e ~
+Color: color3     #e5c76b ~
+Color: color4     #67b0e8 ~
+Color: color5     #c47fd5 ~
+Color: color6     #6cbfbf ~
+Color: color7     #b3b9b8 ~
+Color: color8     #2d3437 ~
+Color: color9     #ef7e7e ~
+Color: color10    #96d988 ~
+Color: color11    #f4d67a ~
+Color: color12    #71baf2 ~
+Color: color13    #ce89df ~
+Color: color14    #67cbe7 ~
+Color: color15    #bdc3c2 ~
+Color: background #141b1e ~
+Color: foreground #dadada ~
+Color: comment    #404749 ~

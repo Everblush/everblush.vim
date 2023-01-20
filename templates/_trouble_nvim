@@ -1,0 +1,11 @@
+; vim: ft=colortemplate
+
+; trouble.nvim: https://github.com/folke/trouble.nvim
+#if get(g:, '@optionprefix_transp_bg', 0)
+    LspTroubleNormal            foreground none
+#else
+    LspTroubleNormal            foreground background
+#endif
+
+LspTroubleCount                 color6     foreground
+LspTroubleText                  foreground none

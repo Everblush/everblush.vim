@@ -1,0 +1,6 @@
+; vim: ft=colortemplate
+
+; gitsigns: https://github.com/lewis6991/gitsigns.nvim
+GitSignsAdd                     color4     none
+GitSignsChange                  color5     none
+GitSignsDelete                  color1     none

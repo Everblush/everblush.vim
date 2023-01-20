@@ -1,0 +1,12 @@
+; vim: ft=colortemplate
+
+; telescope.nvim: https://github.com/nvim-telescope/telescope.nvim
+#if get(g:, '@optionprefix_transp_bg', 0)
+    TelescopeBorder             color0     none
+    TelescopeNormal             foreground none
+#else
+    TelescopeBorder             color0     background
+    TelescopeNormal             foreground background
+#endif
+
+TelescopeSelection              background color5

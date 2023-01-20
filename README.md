@@ -78,7 +78,7 @@
 
 ## Integrations
 
-### [Lualine](https://github.com/nvim-lualine/lualine.nvim)
+### [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 
 **Using Lua**
 ```lua
@@ -95,16 +95,35 @@ require('lualine').setup({
 EOF
 ```
 
-### [Lightline](https://github.com/itchyny/lightline.vim)
+### [lightline.vim](https://github.com/itchyny/lightline.vim)
 
 ```vim
 let g:lightline = {'colorscheme': 'everblush'}
 ```
 
+### Other integrations
+
+- [bufferline.nvim](https://github.com/akinsho/bufferline.nvim) 
+- [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
+- [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
+- [lspsaga.nvim](https://github.com/glepnir/lspsaga.nvim)
+- [neogit](https://github.com/TimUntersberger/neogit)
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+- [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)
+- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+- [trouble.nvim](https://github.com/folke/trouble.nvim)
+- [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
+- [vim-illuminate](https://github.com/RRethy/vim-illuminate)
+
 ## Additional configuration
 
-Line number highlighting is enabled by default. To disable, add the line `g:everblushNR = 0` to your `vimrc` before `colorscheme everblush`.
+Use the following variables for modifying the default configuration -
 
+| Variable | Usage |
+| -------- | ----- |
+| `g:everblush_transp_bg` | Add the line `let g:everblush_transp_bg = 1` to your `vimrc` to set a transparent background. |
+| `g:everblushNR` | Add the line `let g:everblushNR = 0` to your `vimrc` to disable line numbers. |
 ## Credits
 
 <a href="https://github.com/Everblush/everblush.vim/graphs/contributors">

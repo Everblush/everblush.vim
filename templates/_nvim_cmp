@@ -1,0 +1,20 @@
+; vim: ft=colortemplate
+
+; nvim-cmp: https://github.com/hrsh7th/nvim-cmp
+#if get(g:, '@optionprefix_transp_bg', 0)
+    CmpDocumentationBorder      foreground none
+    CmpItemAbbr                 foreground none
+    CmpItemAbbrDeprecated       color2     none
+    CmpItemAbbrMatch            color7     none
+    CmpItemAbbrMatchFuzzy       color7     none
+    CmpItemKind                 color4     none
+    CmpItemMenu                 color2     none
+#else
+    CmpDocumentationBorder      foreground background
+    CmpItemAbbr                 foreground background
+    CmpItemAbbrDeprecated       color2     background
+    CmpItemAbbrMatch            color7     background
+    CmpItemAbbrMatchFuzzy       color7     background
+    CmpItemKind                 color4     background
+    CmpItemMenu                 color2     background
+#endif

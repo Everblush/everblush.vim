@@ -1,0 +1,5 @@
+; vim: ft=colortemplate
+
+Include: _cpp
+
+Include: _go

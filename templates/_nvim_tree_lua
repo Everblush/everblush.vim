@@ -1,0 +1,26 @@
+; vim: ft=colortemplate
+
+; nvim-tree.lua: https://github.com/nvim-tree/nvim-tree.lua
+#if get(g:, '@optionprefix_transp_bg', 0)
+    NvimTreeFolderIcon          color4     none
+    NvimTreeNormal              foreground none
+    NvimTreeNormalNC            foreground none
+    NvimTreeStatusLineNC        background none
+#else
+    NvimTreeFolderIcon          color4     background
+    NvimTreeNormal              foreground background
+    NvimTreeNormalNC            foreground background
+    NvimTreeStatusLineNC        background background
+#endif
+
+NvimTreeEmptyFolderName         color2     none
+NvimTreeFolderName              foreground none
+NvimTreeGitDeleted              color1     none
+NvimTreeGitDirty                color5     none
+NvimTreeGitNew                  color4     none
+NvimTreeImageFile               foreground none
+NvimTreeIndentMarker            color0     none
+NvimTreeOpenedFolderName        color2     none
+NvimTreeRootFolder              color1     none
+NvimTreeSpecialFile             color6     none
+NvimTreeSymlink                 color7     none

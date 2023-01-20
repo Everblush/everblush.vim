@@ -1,0 +1,84 @@
+; vim: ft=colortemplate
+
+; Base
+#if get(g:, 'everblushNR', 0)
+    CursorLineNR                color0     none
+#else
+    CursorLineNR                color7     none
+#endif
+
+#if get(g:, '@optionprefix_transp_bg', 0)
+    DiffAdd                     color2     none
+    DiffChange                  color5     none
+    DiffDelete                  color6     none
+    DiffText                    color1     none
+    Normal                      foreground none
+    StatusLine                  foreground none
+    StatusLineNC                none       none
+#else
+    DiffAdd                     color2     background
+    DiffChange                  color5     background
+    DiffDelete                  color6     background
+    DiffText                    color1     background
+    Normal                      foreground background
+    StatusLine                  foreground background
+    StatusLineNC                none       background
+#endif
+
+ColorColumn                     none       color8
+Comment                         color8     none       italic
+Conditional                     color1     none
+Constant                        color4     none
+CursorLine                      none       color0
+Debug                           color13    none
+Define                          color6     none
+Delimiter                       color7     none
+Directory                       color4     none
+EndOfBuffer                     none       none
+Error                           color1     none
+ErrorMsg                        color1     color8
+Exception                       color7     none
+Function                        color4     none
+Identifier                      color1     none
+IncSearch                       color3     none
+Include                         color1     none
+Keyword                         color5     none
+Label                           color12    none
+LineNr                          color8     none
+Macro                           color5     none
+MatchParen                      color1     none
+MoreMsg                         color14    none
+NonText                         color5     color0
+Number                          color6     none
+Operator                        color4     none
+PMenu                           color7     color0
+PMenuSel                        color8     color5
+PreCondit                       color5     none
+PreProc                         color4     none
+Repeat                          color5     none
+Search                          color4     color8
+SignColumn                      none       color0
+Special                         color4     none
+SpecialChar                     color4     none
+SpecialComment                  color8     none       italic
+SpellBad                        color1     none
+SpellCap                        color1     color8
+SpellLocal                      color4     none
+SpellRare                       color5     none
+Statement                       color5     none
+Storage                         color9     none
+String                          color2     none
+TabLine                         color7     color8
+TabLineFill                     none       color8
+Tag                             color15    none
+TermCursor                      foreground none
+TermCursorNC                    foreground none
+Title                           color2     none
+Title                           color3     none
+Todo                            color5     none
+Type                            color4     none
+Underlined                      color3     none
+VertSplit                       color8     color0
+Visual                          none       color0
+WarningMsg                      color0     none
+markdownLinkText                color9     none

@@ -1,0 +1,15 @@
+; vim: ft=colortemplate
+
+Full name: Everblush
+Short name: everblush
+
+Include: _info
+
+Variant: gui 256
+
+Background: dark
+Include: _palette
+
+Include: _highlights
+
+Include: _lightline

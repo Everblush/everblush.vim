@@ -1,0 +1,11 @@
+; vim: ft=colortemplate
+
+Include: _terminal_colors
+
+Include: _base_highlights
+
+Include: _neovim
+
+Include: _plugins
+
+Include: _syntax

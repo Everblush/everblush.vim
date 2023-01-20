@@ -1,0 +1,36 @@
+; vim: ft=colortemplate
+
+; C++ syntax highlighting
+PreProcGroup                color4     none
+cConstant                   color4     none
+cCppBracket                 color7     none
+cCppInElse                  color7     none
+cCppInElse2                 color7     none
+cCppInIf                    color4     none
+cCppInSkip                  color7     none
+cCppInWapper                color5     none
+cCppOutElse                 color7     none
+cCppOutIf                   color8     none
+cCppOutIf2                  color8     none
+cCppOutInGroup              color8     none
+cCppOutSkip                 color8     none
+cCppOutWrapper              color5     none
+cCppParen                   color7     none
+cCppString                  color2     none
+cCurlyError                 color7     color9
+cErrInBracket               color7     color9
+cErrInParen                 color7     color9
+cFloat                      color8     none
+cFormat                     color4     none
+cMutli                      color3     none
+cOperator                   color4     none
+cParen                      color3     none
+cParenError                 color7     color9
+cSpaceError                 color1     none
+cSpecial                    color4     none
+cSpecialCharacter           color4     none
+cStatement                  color5     none
+cStorageClass               color3     none
+cString                     color2     none
+cType                       color3     none
+cUserCont                   color7     none
