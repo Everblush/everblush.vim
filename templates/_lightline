@@ -1,5 +1,11 @@
 auxfile autoload/lightline/colorscheme/@shortname.vim
-
+" ----------------------------------------------------------------
+" File: @shortname.vim
+" Description: A dark, vibrant, and beautiful color scheme for Vim
+" Author: Prateek Tade <prateek.tade@gmail.com>
+" Source: https://github.com/Everblush/everblush.vim
+" Last Modified: 24 Jan 2023
+" ----------------------------------------------------------------
 if &background ==# '@background'
     let s:color0     = ['@guicolor0', @term256color0]
     let s:color1     = ['@guicolor1', @term256color1]
@@ -43,5 +49,4 @@ if &background ==# '@background'
 
     let g:lightline#colorscheme#@shortname#palette = lightline#colorscheme#flatten(s:p)
 endif
-
 endauxfile

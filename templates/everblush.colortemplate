@@ -13,3 +13,5 @@ Include: _palette
 Include: _highlights
 
 Include: _lightline
+
+Include: _airline

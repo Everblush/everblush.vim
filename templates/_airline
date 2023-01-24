@@ -1,0 +1,50 @@
+auxfile autoload/airline/themes/@shortname.vim
+" ----------------------------------------------------------------
+" File: @shortname.vim
+" Description: A dark, vibrant, and beautiful color scheme for Vim
+" Author: Prateek Tade <prateek.tade@gmail.com>
+" Source: https://github.com/Everblush/everblush.vim
+" Last Modified: 24 Jan 2023
+" ----------------------------------------------------------------
+if &background ==# '@background'
+    " Normal mode
+    let s:N1 = ['@guibackground', '@guicolor2', @term256background, @term256color2]
+    let s:N2 = ['@guicolor7', '@guibackground', @term256color7, @term256background]
+    let s:N3 = ['@guiforeground', '@guibackground', @term256foreground, @term256background]
+
+    " Insert mode
+    let s:I1 = ['@guibackground', '@guicolor10', @term256background, @term256color10]
+    let s:I2 = ['@guicolor4', '@guibackground', @term256color4, @term256background]
+    let s:I3 = ['@guiforeground', '@guibackground', @term256foreground, @term256background]
+
+    " Visual mode
+    let s:V1 = ['@guibackground', '@guicolor6', @term256background, @term256color6]
+    let s:V2 = ['@guicolor6', '@guibackground', @term256color6, @term256background]
+    let s:V3 = ['@guiforeground', '@guibackground', @term256foreground, @term256background]
+
+    " Replace mode
+    let s:RE = ['@guibackground', '@guicolor1', @term256background, @term256color1]
+
+    " Warning section
+    let s:WR = ['@guibackground', '@guicolor3', @term256background, @term256color3]
+
+    let g:airline#themes#@shortname#palette = {}
+
+    let g:airline#themes#@shortname#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
+
+    let g:airline#themes#@shortname#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)
+    let g:airline#themes#@shortname#palette.insert_replace = { 'airline_a': [ s:RE[0], s:I1[1], s:RE[1], s:I1[3], '' ] }
+
+    let g:airline#themes#@shortname#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
+
+    let g:airline#themes#@shortname#palette.replace = copy(g:airline#themes#@shortname#palette.normal)
+    let g:airline#themes#@shortname#palette.replace.airline_a = [ s:RE[0], s:RE[1], s:RE[2], s:RE[3], '' ]
+
+    let s:IA = [ s:N1[1], s:N3[1], s:N1[3], s:N3[3], '' ]
+    let g:airline#themes#@shortname#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)
+
+    let g:airline#themes#@shortname#palette.normal.airline_warning = s:WR
+    let g:airline#themes#@shortname#palette.insert.airline_warning = s:WR
+    let g:airline#themes#@shortname#palette.visual.airline_warning = s:WR
+endif
+endauxfile
