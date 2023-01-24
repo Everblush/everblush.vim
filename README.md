@@ -101,6 +101,14 @@ EOF
 let g:lightline = {'colorscheme': 'everblush'}
 ```
 
+### [vim-airline](https://github.com/vim-airline/vim-airline)
+
+```vim
+let g:airline_theme = 'everblush'
+let g:airline_powerline_fonts = 1 " For powerline symbols in statusline
+let g:airline#extensions#tabline#enabled = 1 " To enable custom tabline
+```
+
 ### Other integrations
 
 - [bufferline.nvim](https://github.com/akinsho/bufferline.nvim) 
