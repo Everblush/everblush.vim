@@ -1,5 +1,11 @@
 auxfile autoload/airline/themes/@shortname.vim
-
+" ----------------------------------------------------------------
+" File: @shortname.vim
+" Description: A dark, vibrant, and beautiful color scheme for Vim
+" Author: Prateek Tade <prateek.tade@gmail.com>
+" Source: https://github.com/Everblush/everblush.vim
+" Last Modified: 24 Jan 2023
+" ----------------------------------------------------------------
 if &background ==# '@background'
     " Normal mode
     let s:N1 = ['@guibackground', '@guicolor2', @term256background, @term256color2]
@@ -41,5 +47,4 @@ if &background ==# '@background'
     let g:airline#themes#@shortname#palette.insert.airline_warning = s:WR
     let g:airline#themes#@shortname#palette.visual.airline_warning = s:WR
 endif
-
 endauxfile

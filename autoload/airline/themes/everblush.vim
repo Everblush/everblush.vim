@@ -1,4 +1,10 @@
-
+" ----------------------------------------------------------------
+" File: everblush.vim
+" Description: A dark, vibrant, and beautiful color scheme for Vim
+" Author: Prateek Tade <prateek.tade@gmail.com>
+" Source: https://github.com/Everblush/everblush.vim
+" Last Modified: 24 Jan 2023
+" ----------------------------------------------------------------
 if &background ==# 'dark'
     " Normal mode
     let s:N1 = ['#141b1e', '#8ccf7e', 234, 114]
@@ -40,4 +46,3 @@ if &background ==# 'dark'
     let g:airline#themes#everblush#palette.insert.airline_warning = s:WR
     let g:airline#themes#everblush#palette.visual.airline_warning = s:WR
 endif
-

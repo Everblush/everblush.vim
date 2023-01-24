@@ -1,4 +1,10 @@
-
+" ----------------------------------------------------------------
+" File: everblush.vim
+" Description: A dark, vibrant, and beautiful color scheme for Vim
+" Author: Prateek Tade <prateek.tade@gmail.com>
+" Source: https://github.com/Everblush/everblush.vim
+" Last Modified: 24 Jan 2023
+" ----------------------------------------------------------------
 if &background ==# 'dark'
     let s:color0     = ['#232a2d', 235]
     let s:color1     = ['#e57474', 174]
@@ -42,4 +48,3 @@ if &background ==# 'dark'
 
     let g:lightline#colorscheme#everblush#palette = lightline#colorscheme#flatten(s:p)
 endif
-
