@@ -111,7 +111,7 @@ hi Search guifg=#67b0e8 guibg=#2d3437 gui=NONE cterm=NONE
 hi SignColumn guifg=NONE guibg=#232a2d gui=NONE cterm=NONE
 hi Special guifg=#67b0e8 guibg=NONE gui=NONE cterm=NONE
 hi SpecialChar guifg=#67b0e8 guibg=NONE gui=NONE cterm=NONE
-hi SpecialComment guifg=#2d3437 guibg=NONE gui=italic cterm=italic
+hi SpecialComment guifg=#424c50 guibg=NONE gui=italic cterm=italic
 hi SpecialKey guifg=#67b0e8 guibg=NONE gui=NONE cterm=NONE
 hi SpellBad guifg=#e57474 guibg=NONE gui=NONE cterm=NONE
 hi SpellCap guifg=#e57474 guibg=#2d3437 gui=NONE cterm=NONE
