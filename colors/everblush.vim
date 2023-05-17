@@ -92,7 +92,7 @@ hi IncSearch guifg=#e5c76b guibg=NONE gui=NONE cterm=NONE
 hi Include guifg=#e57474 guibg=NONE gui=NONE cterm=NONE
 hi Keyword guifg=#c47fd5 guibg=NONE gui=NONE cterm=NONE
 hi Label guifg=#71baf2 guibg=NONE gui=NONE cterm=NONE
-hi LineNr guifg=#2d3437 guibg=NONE gui=NONE cterm=NONE
+hi LineNr guifg=#424c50 guibg=NONE gui=NONE cterm=NONE
 hi Macro guifg=#c47fd5 guibg=NONE gui=NONE cterm=NONE
 hi MatchParen guifg=#e57474 guibg=NONE gui=NONE cterm=NONE
 hi MoreMsg guifg=#67cbe7 guibg=NONE gui=NONE cterm=NONE
@@ -136,7 +136,7 @@ hi VertSplit guifg=#2d3437 guibg=#232a2d gui=NONE cterm=NONE
 hi Visual guifg=NONE guibg=#232a2d gui=NONE cterm=NONE
 hi WarningMsg guifg=#232a2d guibg=NONE gui=NONE cterm=NONE
 hi Whitespace guifg=#e57474 guibg=NONE gui=NONE cterm=NONE
-hi WildMenu guifg=#b3b9b8 guibg=#67b0e8 gui=NONE cterm=NONE
+hi WildMenu guifg=#232a2d guibg=#67b0e8 gui=NONE cterm=NONE
 hi lCursor guifg=#dadada guibg=#dadada gui=NONE cterm=NONE
 hi markdownLinkText guifg=#ef7e7e guibg=NONE gui=NONE cterm=NONE
 hi DiagnosticError guifg=#e57474 guibg=NONE gui=NONE cterm=NONE
