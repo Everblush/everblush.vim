@@ -94,7 +94,7 @@ hi Keyword guifg=#c47fd5 guibg=NONE gui=NONE cterm=NONE
 hi Label guifg=#71baf2 guibg=NONE gui=NONE cterm=NONE
 hi LineNr guifg=#424c50 guibg=NONE gui=NONE cterm=NONE
 hi Macro guifg=#c47fd5 guibg=NONE gui=NONE cterm=NONE
-hi MatchParen guifg=#e57474 guibg=NONE gui=NONE cterm=NONE
+hi MatchParen guifg=#dadada guibg=#636665 gui=bold cterm=NONE
 hi MoreMsg guifg=#67cbe7 guibg=NONE gui=NONE cterm=NONE
 hi NonText guifg=#c47fd5 guibg=#232a2d gui=NONE cterm=NONE
 hi Number guifg=#6cbfbf guibg=NONE gui=NONE cterm=NONE
@@ -475,7 +475,7 @@ if s:t_Co >= 256
   hi Label ctermfg=110 ctermbg=NONE cterm=NONE
   hi LineNr ctermfg=236 ctermbg=NONE cterm=NONE
   hi Macro ctermfg=176 ctermbg=NONE cterm=NONE
-  hi MatchParen ctermfg=174 ctermbg=NONE cterm=NONE
+  hi MatchParen ctermfg=174 ctermbg=NONE cterm=bold
   hi MoreMsg ctermfg=81 ctermbg=NONE cterm=NONE
   hi NonText ctermfg=176 ctermbg=235 cterm=NONE
   hi Number ctermfg=73 ctermbg=NONE cterm=NONE
