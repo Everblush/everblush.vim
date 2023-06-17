@@ -105,7 +105,7 @@ hi PmenuThumb guifg=NONE guibg=#8ccf7e gui=NONE cterm=NONE
 hi PreCondit guifg=#c47fd5 guibg=NONE gui=NONE cterm=NONE
 hi PreProc guifg=#67b0e8 guibg=NONE gui=NONE cterm=NONE
 hi Question guifg=#c47fd5 guibg=NONE gui=NONE cterm=NONE
-hi QuickFixLine guifg=NONE guibg=#8ccf7e gui=NONE cterm=NONE
+hi QuickFixLine guifg=#232a2d guibg=#8ccf7e gui=NONE cterm=NONE
 hi Repeat guifg=#c47fd5 guibg=NONE gui=NONE cterm=NONE
 hi Search guifg=#67b0e8 guibg=#2d3437 gui=NONE cterm=NONE
 hi SignColumn guifg=NONE guibg=#232a2d gui=NONE cterm=NONE
