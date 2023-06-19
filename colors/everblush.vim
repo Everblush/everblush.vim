@@ -105,7 +105,7 @@ hi PmenuThumb guifg=NONE guibg=#8ccf7e gui=NONE cterm=NONE
 hi PreCondit guifg=#c47fd5 guibg=NONE gui=NONE cterm=NONE
 hi PreProc guifg=#67b0e8 guibg=NONE gui=NONE cterm=NONE
 hi Question guifg=#c47fd5 guibg=NONE gui=NONE cterm=NONE
-hi QuickFixLine guifg=NONE guibg=#8ccf7e gui=NONE cterm=NONE
+hi QuickFixLine guifg=#232a2d guibg=#8ccf7e gui=NONE cterm=NONE
 hi Repeat guifg=#c47fd5 guibg=NONE gui=NONE cterm=NONE
 hi Search guifg=#67b0e8 guibg=#2d3437 gui=NONE cterm=NONE
 hi SignColumn guifg=NONE guibg=#232a2d gui=NONE cterm=NONE
@@ -330,7 +330,7 @@ hi cCppString guifg=#8ccf7e guibg=NONE gui=NONE cterm=NONE
 hi cCurlyError guifg=#b3b9b8 guibg=#ef7e7e gui=NONE cterm=NONE
 hi cErrInBracket guifg=#b3b9b8 guibg=#ef7e7e gui=NONE cterm=NONE
 hi cErrInParen guifg=#b3b9b8 guibg=#ef7e7e gui=NONE cterm=NONE
-hi cFloat guifg=#2d3437 guibg=NONE gui=NONE cterm=NONE
+hi cFloat guifg=#6cbfbf guibg=NONE gui=NONE cterm=NONE
 hi cFormat guifg=#67b0e8 guibg=NONE gui=NONE cterm=NONE
 hi cMutli guifg=#e5c76b guibg=NONE gui=NONE cterm=NONE
 hi cOperator guifg=#67b0e8 guibg=NONE gui=NONE cterm=NONE
